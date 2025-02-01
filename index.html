@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,138 +6,113 @@
     <title>Brian Benson HVAC</title>
     <style>
         body {
+            font-family: 'Arial', sans-serif;
             margin: 0;
-            font-family: 'Open Sans', sans-serif;
-            background-color: #002f36; /* Dark teal */
-            color: white;
-            text-align: center;
+            padding: 0;
+            background-color: #0F172A;
+            color: #E2E8F0;
+            line-height: 1.6;
         }
         header {
-            background-color: #004d56;
-            padding: 1rem 0;
+            text-align: center;
+            background-color: #FFA500;
+            padding: 50px 20px;
+        }
+        header img {
+            max-width: 400px;
+            height: auto;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #334155;
+            padding: 10px 0;
             position: sticky;
             top: 0;
             z-index: 1000;
         }
-        .nav-container {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            padding-bottom: 10px;
-        }
-        .nav-container a {
+        nav a {
+            color: #E2E8F0;
             text-decoration: none;
-            background-color: #ffa726; /* Orange */
-            color: white;
-            padding: 10px 15px;
+            margin: 0 15px;
+            font-size: 16px;
+            padding: 8px 12px;
+            border: 2px solid transparent;
             border-radius: 5px;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: background 0.3s;
+            transition: all 0.3s ease-in-out;
         }
-        .nav-container a:hover {
-            background-color: #ff8a50;
+        nav a:hover {
+            background-color: #FFA500;
+            border-color: #FFA500;
+            color: #0F172A;
         }
-        .logo-container {
-            margin: 20px 0;
-        }
-        .logo {
-            max-width: 350px;
-            height: auto;
-        }
-        .hero {
-            padding: 2rem;
-            background: linear-gradient(to bottom, #004d56, #002f36);
-        }
-        .hero h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        .hero p {
-            font-size: 1.2rem;
-        }
-        .hero button {
-            margin-top: 1rem;
-            padding: 0.75rem 1.5rem;
-            border: none;
-            background-color: #ffa726;
-            color: white;
-            font-size: 1rem;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        .hero button:hover {
-            background-color: #ff8a50;
+        main {
+            padding: 20px;
         }
         section {
-            padding: 2rem;
-            max-width: 900px;
-            margin: auto;
+            margin-bottom: 40px;
         }
         section h2 {
-            font-size: 2rem;
-            color: #ffa726;
+            color: #FFA500;
+        }
+        .quote-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FFA500;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
         }
         footer {
-            padding: 1rem;
-            background-color: #004d56;
-        }
-        footer p {
-            margin: 0;
-            color: #b0bec5; /* Light gray */
+            text-align: center;
+            padding: 15px;
+            background-color: #1E293B;
+            color: #94A3B8;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="nav-container">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#contact">Contact</a>
-        </div>
+        <img src="updated_logo.jpg" alt="Brian Benson HVAC Logo">
     </header>
-
-    <div class="logo-container">
-        <img src="logo.jpg" alt="Brian Benson HVAC Logo" class="logo">
-    </div>
-
-    <section id="home" class="hero">
-        <h1>Welcome to Brian Benson HVAC</h1>
-        <p>Your Trusted Heating & Cooling Experts</p>
-        <button>Get a Free Quote</button>
-    </section>
-
-    <section id="about">
-        <h2>About Us</h2>
-        <p>At Brian Benson HVAC, we are committed to delivering reliable heating and cooling solutions with excellent customer service. With years of experience in the industry, we take pride in our workmanship and customer satisfaction. Our goal is to ensure your comfort with professional, efficient, and affordable HVAC services.</p>
-    </section>
-
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li><strong>HVAC Installation:</strong> High-efficiency heating and cooling systems tailored to your needs.</li>
-            <li><strong>Repairs & Maintenance:</strong> Quick and effective solutions to keep your HVAC system running smoothly.</li>
-            <li><strong>Air Quality Solutions:</strong> Improve indoor air quality with filtration and ventilation systems.</li>
-            <li><strong>Emergency Services:</strong> 24/7 assistance for urgent HVAC issues.</li>
-        </ul>
-    </section>
-
-    <section id="testimonials">
-        <h2>Testimonials</h2>
-        <p>"Brian Benson HVAC exceeded my expectations! Quick service and fair pricing. Highly recommended!"</p>
-        <p>"Honest, professional, and reliable. Will definitely use their services again!"</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>📍 Saugerties, NY</p>
-        <p>📞 <a href="tel:+18452170873">(845) 217-0873</a></p>
-        <p>📧 <a href="mailto:BrianBensonHVAC@gmail.com">BrianBensonHVAC@gmail.com</a></p>
-        <p>💻 <a href="#" style="color: #ffa726;">[Your Website URL]</a></p>
-    </section>
-
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section id="home">
+            <h1>Welcome to Brian Benson HVAC</h1>
+            <p>Your comfort is our priority. Professional heating and cooling services tailored to your needs.</p>
+            <a href="https://your-quote-link.com" class="quote-button">Get a Free Quote</a>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At Brian Benson HVAC, we are dedicated to providing reliable, efficient, and high-quality HVAC solutions for homes and businesses. Our skilled technicians are committed to ensuring your comfort all year round.</p>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>HVAC Installation</li>
+                <li>Repairs & Maintenance</li>
+                <li>Air Quality Solutions</li>
+                <li>Emergency Services</li>
+            </ul>
+        </section>
+        <section id="testimonials">
+            <h2>What Our Customers Say</h2>
+            <blockquote>"Brian Benson HVAC transformed our home's comfort. Highly recommend!"</blockquote>
+            <blockquote>"Efficient, professional, and trustworthy."</blockquote>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:BrianBensonHVAC@gmail.com">BrianBensonHVAC@gmail.com</a></p>
+            <p>Phone: <a href="tel:+18452170873">(845) 217-0873</a></p>
+        </section>
+    </main>
     <footer>
         <p>&copy; 2025 Brian Benson HVAC. All rights reserved.</p>
     </footer>
