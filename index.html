@@ -1,70 +1,146 @@
-import React from "react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 
-const Homepage = () => {
-  return (
-    <div className="bg-dark-teal text-white min-h-screen">
-      {/* Hero Section */}
-      <header className="relative h-screen flex flex-col items-center justify-center bg-cover bg-center" style={{ backgroundImage: `url('/hero-background.jpg')` }}>
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div className="relative z-10 text-center">
-          <img
-            src="/logo.jpg"
-            alt="Brian Benson HVAC Logo"
-            className="w-32 mx-auto mb-6"
-          />
-          <h1 className="text-4xl font-bold mb-4">Your Comfort Is Our Commitment</h1>
-          <p className="text-lg mb-6">Professional HVAC services for heating, cooling, and beyond.</p>
-          <div className="flex justify-center space-x-4">
-            <Button className="bg-orange text-white px-6 py-3 text-lg font-semibold rounded-lg">Request a Quote</Button>
-            <Button className="bg-light-blue text-white px-6 py-3 text-lg font-semibold rounded-lg">Learn More</Button>
-          </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Benson HVAC</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #002f36; /* Dark teal */
+            color: white;
+            text-align: center;
+        }
+        header {
+            background-color: #004d56;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding-bottom: 10px;
+        }
+        .nav-container a {
+            text-decoration: none;
+            background-color: #ffa726; /* Orange */
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background 0.3s;
+        }
+        .nav-container a:hover {
+            background-color: #ff8a50;
+        }
+        .logo-container {
+            margin: 20px 0;
+        }
+        .logo {
+            max-width: 450px;
+            height: auto;
+        }
+        .hero {
+            padding: 2rem;
+            background: linear-gradient(to bottom, #004d56, #002f36);
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        .hero button {
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            background-color: #ffa726;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .hero button:hover {
+            background-color: #ff8a50;
+        }
+        section {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+        section h2 {
+            font-size: 2rem;
+            color: #ffa726;
+        }
+        footer {
+            padding: 1rem;
+            background-color: #004d56;
+        }
+        footer p {
+            margin: 0;
+            color: #b0bec5; /* Light gray */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
         </div>
-      </header>
+    </header>
 
-      {/* Service Highlights */}
-      <section className="py-16 px-6 text-center">
-        <h2 className="text-3xl font-bold text-light-blue mb-8">Our Services</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[
-            { title: "Heating Services", description: "Reliable heating repair, installation, and maintenance.", icon: "🔥" },
-            { title: "Cooling Services", description: "Stay cool with expert AC installation and repair.", icon: "❄️" },
-            { title: "Maintenance Plans", description: "Ensure peak performance all year round.", icon: "🛠️" },
-          ].map((service, index) => (
-            <Card key={index} className="bg-white text-dark-teal">
-              <CardContent>
-                <div className="text-5xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                <p>{service.description}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="py-16 px-6 bg-light-gray">
-        <h2 className="text-3xl font-bold text-center text-dark-teal mb-8">What Our Customers Say</h2>
-        <div className="flex flex-col md:flex-row gap-6 justify-center">
-          {["Excellent service!", "Highly professional team!", "Affordable and reliable."].map((testimonial, index) => (
-            <Card key={index} className="bg-white text-dark-teal">
-              <CardContent>
-                <p className="italic">&ldquo;{testimonial}&rdquo;</p>
-                <p className="mt-2 text-right">- Happy Customer</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </section>
-
-      {/* Call to Action */}
-      <footer className="bg-dark-teal text-center py-6">
-        <p className="text-white mb-4">Ready to schedule your HVAC service?</p>
-        <Button className="bg-orange text-white px-6 py-3 text-lg font-semibold rounded-lg">Contact Us Today</Button>
-      </footer>
+    <div class="logo-container">
+        <img src="logo.jpg" alt="Brian Benson HVAC Logo" class="logo">
     </div>
-  );
-};
 
-export default Homepage;
+    <section id="home" class="hero">
+        <h1>Welcome to Brian Benson HVAC</h1>
+        <p>Your Trusted Heating & Cooling Experts</p>
+        <button>Get a Free Quote</button>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Brian Benson HVAC, we are committed to delivering reliable heating and cooling solutions with excellent customer service. With years of experience in the industry, we take pride in our workmanship and customer satisfaction. Our goal is to ensure your comfort with professional, efficient, and affordable HVAC services.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li><strong>HVAC Installation:</strong> High-efficiency heating and cooling systems tailored to your needs.</li>
+            <li><strong>Repairs & Maintenance:</strong> Quick and effective solutions to keep your HVAC system running smoothly.</li>
+            <li><strong>Air Quality Solutions:</strong> Improve indoor air quality with filtration and ventilation systems.</li>
+            <li><strong>Emergency Services:</strong> 24/7 assistance for urgent HVAC issues.</li>
+        </ul>
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <p>"Brian Benson HVAC exceeded my expectations! Quick service and fair pricing. Highly recommended!"</p>
+        <p>"Honest, professional, and reliable. Will definitely use their services again!"</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>📍 Saugerties, NY 12477</p>
+        <p>📞 [Your Phone Number]</p>
+        <p>📧 [Your Email Address]</p>
+        <p>💻 <a href="#" style="color: #ffa726;">[Your Website URL]</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Brian Benson HVAC. All rights reserved.</p>
+    </footer>
+</body>
+</html>
