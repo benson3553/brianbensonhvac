@@ -60,4 +60,143 @@
         }
         .hero button {
             margin-top: 1rem;
-            padding: 0.75rem 1.5rem
+            padding: 0.75rem 1.5rem;
+            border: none;
+            background-color: #ffa726;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .hero button:hover {
+            background-color: #ff8a50;
+        }
+        section {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+        section h2 {
+            font-size: 2rem;
+            color: #ffa726;
+        }
+        #contact p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+        #contact a {
+            color: #ffa726;
+            font-weight: bold;
+        }
+        footer {
+            padding: 1rem;
+            background-color: #004d56;
+        }
+        footer p {
+            margin: 0;
+            color: #b0bec5;
+        }
+        /* Floating Call Button */
+        .call-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ffa726;
+            color: white;
+            font-size: 18px;
+            padding: 15px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s;
+        }
+        .call-button:hover {
+            background-color: #ff8a50;
+        }
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-wrap: wrap;
+                gap: 5px;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .hero button {
+                font-size: 0.9rem;
+                padding: 10px 20px;
+            }
+            .logo {
+                max-width: 90%;
+            }
+            section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <a href="#home" aria-label="Go to Home">Home</a>
+            <a href="#about" aria-label="Go to About Us">About</a>
+            <a href="#services" aria-label="Go to Services">Services</a>
+            <a href="#testimonials" aria-label="Go to Testimonials">Testimonials</a>
+            <a href="#contact" aria-label="Go to Contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="logo-container">
+        <img src="logo.jpg" alt="Brian Benson HVAC Logo" class="logo">
+    </div>
+
+    <section id="home" class="hero">
+        <h1>Welcome to Brian Benson HVAC</h1>
+        <p>Your Trusted Heating & Cooling Experts</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScWX1ycY3gfqG7XQVEXEfAXDhQMfVD6spjUQBeNpm5Mi_F6Wg/viewform?embedded=true" target="_blank">
+            <button>Get a Quote</button>
+        </a>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Brian Benson HVAC, we are committed to delivering reliable heating and cooling solutions with excellent customer service. Our goal is to ensure your comfort with professional, efficient, and affordable HVAC services.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li><strong>HVAC Installation:</strong> High-efficiency heating and cooling systems tailored to your needs.</li>
+            <li><strong>Repairs & Maintenance:</strong> Quick and effective solutions to keep your HVAC system running smoothly.</li>
+            <li><strong>Air Quality Solutions:</strong> Improve indoor air quality with filtration and ventilation systems.</li>
+            <li><strong>Emergency Services:</strong> 24/7 assistance for urgent HVAC issues.</li>
+        </ul>
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <p>"Brian Benson HVAC exceeded my expectations! Quick service and fair pricing. Highly recommended!"</p>
+        <p>"Honest, professional, and reliable. Will definitely use their services again!"</p>
+    </section>
+
+    <section id="contact">
+       <h2>Contact Us</h2>
+       <p>📍 Saugerties, NY 12477</p>
+       <p>📞 <a href="tel:8452100873">845-210-0873</a></p>
+       <p>📧 <a href="mailto:Contact@BrianBensonHVAC.com">Contact@BrianBensonHVAC.com</a></p>
+        <div id="form-container" style="text-align: center;">
+            <p>Loading contact form...</p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWX1ycY3gfqG7XQVEXEfAXDhQMfVD6spjUQBeNpm5Mi_F6Wg/viewform?embedded=true" width="100%" height="815" frameborder="0" onload="this.previousElementSibling.style.display='none';"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Brian Benson HVAC. All rights reserved.</p>
+    </footer>
+
+    <a href="tel:8452100873" class="call-button">📞 Call Us</a>
+</body>
+</html>
