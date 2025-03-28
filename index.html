@@ -5,50 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brian Benson HVAC</title>
     <meta name="description" content="Brian Benson HVAC provides expert heating and cooling services in Saugerties, NY. Contact us for reliable HVAC installation, maintenance, and emergency repairs.">
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // QR Code & Referral Tracking
-            const urlParams = new URLSearchParams(window.location.search);
-            const source = urlParams.get('source') || "direct";
-            const googleScriptURL = "https://script.google.com/a/macros/brianbensonhvac.com/s/AKfycbzkJPSChn3fY3fI2OBbPcs6X7Q2XNpeT-Ux8Fakrw8NT4HfehbeRN7IKo4xMgaTz8j3xg/exec";
-
-            if (source) {
-                fetch(`${googleScriptURL}?source=${source}&event=scan`)
-                    .then(response => response.text())
-                    .then(data => console.log("QR Scan logged:", data))
-                    .catch(error => console.error("Error:", error));
-            }
-
-            document.querySelectorAll("a.track-link").forEach(link => {
-                link.addEventListener("click", function() {
-                    let ref = this.dataset.ref || "unknown";
-                    fetch(`${googleScriptURL}?source=${ref}&event=click`)
-                        .then(response => response.text())
-                        .then(data => console.log("Click logged:", data))
-                        .catch(error => console.error("Error:", error));
-                });
-            });
-
-            // Fetch Google Reviews
-            fetchGoogleReviews();
-        });
-
-        function fetchGoogleReviews() {
-            fetch("https://script.google.com/macros/s/YOUR_GOOGLE_SCRIPT_ID/exec")
-                .then(response => response.json())
-                .then(data => {
-                    let reviewsContainer = document.getElementById("google-reviews");
-                    reviewsContainer.innerHTML = "";
-                    data.reviews.forEach(review => {
-                        let reviewHTML = `<p><strong>${review.author_name}:</strong> ${review.text}</p>`;
-                        reviewsContainer.innerHTML += reviewHTML;
-                    });
-                })
-                .catch(error => console.error("Error fetching Google reviews:", error));
-        }
-    </script>
-
     <style>
         body {
             margin: 0;
@@ -56,6 +12,7 @@
             background-color: #002f36;
             color: white;
             text-align: center;
+            scroll-behavior: smooth;
         }
         header {
             background-color: #004d56;
@@ -70,7 +27,7 @@
             gap: 10px;
             padding-bottom: 10px;
         }
-        .nav-container a, .social-media a {
+        .nav-container a {
             text-decoration: none;
             background-color: #ffa726;
             color: white;
@@ -80,7 +37,7 @@
             font-size: 1.1rem;
             transition: background 0.3s;
         }
-        .nav-container a:hover, .social-media a:hover {
+        .nav-container a:hover {
             background-color: #ff8a50;
         }
         .logo-container {
@@ -93,6 +50,13 @@
         .hero {
             padding: 2rem;
             background: linear-gradient(to bottom, #004d56, #002f36);
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 2.0rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
         }
         .hero button {
             margin-top: 1rem;
@@ -107,19 +71,32 @@
         .hero button:hover {
             background-color: #ff8a50;
         }
-        .social-media {
-            margin-top: 10px;
+        section {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
         }
-        .social-media a {
-            display: inline-block;
-            margin: 5px;
-            padding: 10px 15px;
-            font-size: 1rem;
+        section h2 {
+            font-size: 2rem;
+            color: #ffa726;
+        }
+        #contact p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+        #contact a {
+            color: #ffa726;
+            font-weight: bold;
         }
         footer {
             padding: 1rem;
             background-color: #004d56;
         }
+        footer p {
+            margin: 0;
+            color: #b0bec5;
+        }
+        /* Floating Call Button */
         .call-button {
             position: fixed;
             bottom: 20px;
@@ -136,8 +113,90 @@
         .call-button:hover {
             background-color: #ff8a50;
         }
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-wrap: wrap;
+                gap: 5px;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .hero button {
+                font-size: 0.9rem;
+                padding: 10px 20px;
+            }
+            .logo {
+                max-width: 90%;
+            }
+            section {
+                padding: 1.5rem;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <nav class="nav
+        <nav class="nav-container">
+            <a href="#home" aria-label="Go to Home">Home</a>
+            <a href="#about" aria-label="Go to About Us">About</a>
+            <a href="#services" aria-label="Go to Services">Services</a>
+            <a href="#testimonials" aria-label="Go to Testimonials">Testimonials</a>
+            <a href="#contact" aria-label="Go to Contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="logo-container">
+        <img src="websitelogo.png" alt="Brian Benson HVAC Logo" class="logo">
+    </div>
+
+    <section id="home" class="hero">
+        <h1>Welcome to Brian Benson HVAC</h1>
+        <p>Your Trusted Heating & Cooling Experts</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScWX1ycY3gfqG7XQVEXEfAXDhQMfVD6spjUQBeNpm5Mi_F6Wg/viewform?embedded=true" target="_blank">
+            <button>Get a Quote</button>
+        </a>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Brian Benson HVAC, we are committed to delivering reliable heating and cooling solutions with excellent customer service. Our goal is to ensure your comfort with professional, efficient, and affordable HVAC services.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li><strong>HVAC Installation:</strong> High-efficiency heating and cooling systems tailored to your needs.</li>
+            <li><strong>Repairs & Maintenance:</strong> Quick and effective solutions to keep your HVAC system running smoothly.</li>
+            <li><strong>Air Quality Solutions:</strong> Improve indoor air quality with filtration and ventilation systems.</li>
+            <li><strong>Emergency Services:</strong> 24/7 assistance for urgent HVAC issues.</li>
+        </ul>
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <p>"Brian Benson HVAC exceeded my expectations! Quick service and fair pricing. Highly recommended!"</p>
+        <p>"Honest, professional, and reliable. Will definitely use their services again!"</p>
+    </section>
+
+    <section id="contact">
+       <h2>Contact Us</h2>
+       <p>📍 Saugerties, NY 12477</p>
+       <p>📞 <a href="tel:8452170873">845-217-0873</a></p>
+       <p>📧 <a href="mailto:Contact@BrianBensonHVAC.com">Contact@BrianBensonHVAC.com</a></p>
+        <div id="form-container" style="text-align: center;">
+            <p>Loading contact form...</p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWX1ycY3gfqG7XQVEXEfAXDhQMfVD6spjUQBeNpm5Mi_F6Wg/viewform?embedded=true" width="100%" height="815" frameborder="0" onload="this.previousElementSibling.style.display='none';"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Brian Benson HVAC. All rights reserved.</p>
+    </footer>
+
+    <a href="tel:8452170873" class="call-button">📞 Call Us</a>
+</body>
+</html>
