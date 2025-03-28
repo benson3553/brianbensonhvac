@@ -88,3 +88,172 @@
             color: #ffa726;
             font-weight: bold;
         }
+        footer {
+            padding: 1rem;
+            background-color: #004d56;
+        }
+        footer p {
+            margin: 0;
+            color: #b0bec5;
+        }
+        /* Floating Call Button */
+        .call-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ffa726;
+            color: white;
+            font-size: 18px;
+            padding: 15px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s;
+        }
+        .call-button:hover {
+            background-color: #ff8a50;
+        }
+        /* Social Media Buttons */
+        .social-media {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-link {
+            margin: 10px;
+            display: inline-block;
+        }
+
+        .social-button {
+            background-color: #ffa726;
+            color: white;
+            font-size: 1rem;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .social-button img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .social-button:hover {
+            background-color: #ff8a50;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-wrap: wrap;
+                gap: 5px;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .hero button {
+                font-size: 0.9rem;
+                padding: 10px 20px;
+            }
+            .logo {
+                max-width: 90%;
+            }
+            section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <a href="#home" aria-label="Go to Home">Home</a>
+            <a href="#about" aria-label="Go to About Us">About</a>
+            <a href="#services" aria-label="Go to Services">Services</a>
+            <a href="#testimonials" aria-label="Go to Testimonials">Testimonials</a>
+            <a href="#contact" aria-label="Go to Contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="logo-container">
+        <img src="websitelogo.png" alt="Brian Benson HVAC Logo" class="logo">
+    </div>
+
+    <section id="home" class="hero">
+        <h1>Welcome to Brian Benson HVAC</h1>
+        <p>Your Trusted Heating & Cooling Experts</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScWX1ycY3gfqG7XQVEXEfAXDhQMfVD6spjUQBeNpm5Mi_F6Wg/viewform?embedded=true" target="_blank">
+            <button>Get a Quote</button>
+        </a>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Brian Benson HVAC, we are committed to delivering reliable heating and cooling solutions with excellent customer service. Our goal is to ensure your comfort with professional, efficient, and affordable HVAC services.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li><strong>HVAC Installation:</strong> High-efficiency heating and cooling systems tailored to your needs.</li>
+            <li><strong>Repairs & Maintenance:</strong> Quick and effective solutions to keep your HVAC system running smoothly.</li>
+            <li><strong>Air Quality Solutions:</strong> Improve indoor air quality with filtration and ventilation systems.</li>
+            <li><strong>Emergency Services:</strong> 24/7 assistance for urgent HVAC issues.</li>
+        </ul>
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <p>"Brian Benson HVAC exceeded my expectations! Quick service and fair pricing. Highly recommended!"</p>
+        <p>"Honest, professional, and reliable. Will definitely use their services again!"</p>
+    </section>
+
+    <section id="contact">
+       <h2>Contact Us</h2>
+       <p>📍 Saugerties, NY 12477</p>
+       <p>📞 <a href="tel:8452170873">845-217-0873</a></p>
+       <p>📧 <a href="mailto:Contact@BrianBensonHVAC.com">Contact@BrianBensonHVAC.com</a></p>
+
+       <!-- Social Media Links as Buttons with Logos -->
+       <div class="social-media">
+           <a href="https://www.facebook.com/profile.php?id=61572512650266" target="_blank" class="social-link">
+               <button class="social-button">
+                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/LinkedIn_Logo_2023.svg/1200px-LinkedIn_Logo_2023.svg.png" alt="Facebook" width="30" height="30">
+                   Facebook
+               </button>
+           </a>
+           <a href="https://www.instagram.com/bensonhvacllc" target="_blank" class="social-link">
+               <button class="social-button">
+                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/800px-Instagram_logo_2022.svg.png" alt="Instagram" width="30" height="30">
+                   Instagram
+               </button>
+           </a>
+           <a href="https://linkedin.com/in/brian-benson-hvac-llc" target="_blank" class="social-link">
+               <button class="social-button">
+                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/LinkedIn_in_button_2011.svg/1200px-LinkedIn_in_button_2011.svg.png" alt="LinkedIn" width="30" height="30">
+                   LinkedIn
+               </button>
+           </a>
+       </div>
+
+       <div id="form-container" style="text-align: center;">
+           <p>Loading contact form...</p>
+           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWX1ycY3gfqG7XQVEXEfAXDhQMfVD6spjUQBeNpm5Mi_F6Wg/viewform?embedded=true" width="100%" height="815" frameborder="0" onload="this.previousElementSibling.style.display='none';"></iframe>
+       </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Brian Benson HVAC. All rights reserved.</p>
+    </footer>
+
+    <a href="tel:8452170873" class="call-button">📞 Call Us</a>
+</body>
+</html>
