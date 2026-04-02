@@ -576,14 +576,31 @@
   function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
 
   function submitForm(){
-    const name=document.getElementById('fname').value.trim();
-    const phone=document.getElementById('fphone').value.trim();
-    const email=document.getElementById('femail').value.trim();
-    if(!name||(!phone&&!email)){alert('Please enter your name and at least a phone number or email so we can reach you.');return;}
-    document.getElementById('formSuccess').style.display='block';
-    document.querySelector('.form-submit').style.display='none';
-    // TO CONNECT: fetch('https://formspree.io/f/YOUR_ID',{method:'POST',body:new FormData(document.querySelector('.form-grid'))})
-  }
+  const name=document.getElementById('fname').value.trim();
+  const phone=document.getElementById('fphone').value.trim();
+  const email=document.getElementById('femail').value.trim();
+  const town=document.getElementById('ftown').value.trim();
+  const service=document.getElementById('fservice').value;
+  const message=document.getElementById('fmsg').value.trim();
+  if(!name||(!phone&&!email)){alert('Please enter your name and at least a phone number or email.');return;}
+  const data=new FormData();
+  data.append('name',name);
+  data.append('phone',phone);
+  data.append('email',email);
+  data.append('town',town);
+  data.append('service',service);
+  data.append('message',message);
+  fetch('https://formspree.io/f/mgoplwdp',{method:'POST',body:data,headers:{'Accept':'application/json'}})
+  .then(r=>{
+    if(r.ok){
+      document.getElementById('formSuccess').style.display='block';
+      document.querySelector('.form-submit').style.display='none';
+    } else {
+      alert('Something went wrong. Please call us at 845-217-0873.');
+    }
+  })
+  .catch(()=>alert('Something went wrong. Please call us at 845-217-0873.'));
+}
 
   // Scroll nav highlight
   const allSec=document.querySelectorAll('section[id]');
