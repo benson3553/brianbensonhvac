@@ -1,269 +1,621 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LC5S3TMY7E"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brian Benson HVAC LLC | Your Comfort Is Our Commitment – Saugerties, NY</title>
+  <meta name="description" content="Brian Benson HVAC LLC – licensed, insured, and trusted by Hudson Valley homeowners. 24/7 emergency service. Free estimates. Saugerties, Kingston, Woodstock & beyond."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    :root {
+      --teal-darkest:#051a1b; --teal-dark:#082628; --teal-mid:#0a3235;
+      --teal:#0d4245; --teal-light:#1a6166; --teal-bright:#2a8f96;
+      --amber:#f5a623; --amber-light:#f7be5e; --amber-dark:#d4860a;
+      --white:#ffffff; --off-white:#f0f9f9; --light-teal:#e4f4f5;
+      --text-dark:#0d2e30; --text-mid:#2d5a5d; --text-muted:#6a9ea2;
+      --red-urgent:#e8402a;
+    }
+    html{scroll-behavior:smooth;}
+    body{font-family:'Source Serif 4',Georgia,serif;background:var(--off-white);color:var(--text-dark);overflow-x:hidden;}
 
-  gtag('config', 'G-LC5S3TMY7E');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brian Benson HVAC</title>
-    <meta name="description" content="Brian Benson HVAC provides expert heating and cooling services in Saugerties, NY. Contact us for reliable HVAC installation, maintenance, and emergency repairs.">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Open Sans', sans-serif;
-            background-color: #002f36;
-            color: white;
-            text-align: center;
-            scroll-behavior: smooth;
-        }
-        header {
-            background-color: #004d56;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        .nav-container {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            padding-bottom: 10px;
-        }
-        .nav-container a {
-            text-decoration: none;
-            background-color: #ffa726;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: background 0.3s;
-        }
-        .nav-container a:hover {
-            background-color: #ff8a50;
-        }
-        .logo-container {
-            margin: 20px 0;
-        }
-        .logo {
-            max-width: 850px;
-            height: auto;
-        }
-        .hero {
-            padding: 2rem;
-            background: linear-gradient(to bottom, #004d56, #002f36);
-        }
-        .hero h1 {
-            margin: 0;
-            font-size: 2.0rem;
-        }
-        .hero p {
-            font-size: 1.2rem;
-        }
-        .hero button {
-            margin-top: 1rem;
-            padding: 0.75rem 1.5rem;
-            border: none;
-            background-color: #ffa726;
-            color: white;
-            font-size: 1rem;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        .hero button:hover {
-            background-color: #ff8a50;
-        }
-        section {
-            padding: 2rem;
-            max-width: 900px;
-            margin: auto;
-        }
-        section h2 {
-            font-size: 2rem;
-            color: #ffa726;
-        }
-        #contact p {
-            font-size: 1.1rem;
-            margin: 10px 0;
-        }
-        #contact a {
-            color: #ffa726;
-            font-weight: bold;
-        }
-        footer {
-            padding: 1rem;
-            background-color: #004d56;
-        }
-        footer p {
-            margin: 0;
-            color: #b0bec5;
-        }
-        /* Floating Call Button */
-        .call-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #ffa726;
-            color: white;
-            font-size: 18px;
-            padding: 15px 20px;
-            border-radius: 50px;
-            text-decoration: none;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-            transition: background 0.3s;
-        }
-        .call-button:hover {
-            background-color: #ff8a50;
-        }
-        /* Social Media Buttons */
-        .social-media {
-            margin-top: 20px;
-            text-align: center;
-        }
+    /* ANNOUNCE */
+    .announce-bar{background:var(--amber);padding:.55rem 5%;text-align:center;font-family:'Oswald',sans-serif;font-size:.88rem;font-weight:500;letter-spacing:1.5px;color:var(--teal-darkest);display:flex;align-items:center;justify-content:center;gap:1.5rem;flex-wrap:wrap;}
+    .announce-bar a{color:var(--teal-darkest);font-weight:700;text-decoration:underline;}
+    .pulse-dot{width:8px;height:8px;background:var(--red-urgent);border-radius:50%;display:inline-block;animation:pulseDot 1.5s infinite;flex-shrink:0;}
+    @keyframes pulseDot{0%,100%{transform:scale(1);opacity:1;}50%{transform:scale(1.4);opacity:.7;}}
 
-        .social-link {
-            margin: 10px;
-            display: inline-block;
-        }
+    /* NAV */
+    nav{position:sticky;top:0;z-index:1000;background:rgba(5,26,27,.97);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:72px;border-bottom:2px solid var(--amber);}
+    .nav-logo img{height:52px;width:auto;display:block;}
+    .nav-links{display:flex;gap:.25rem;list-style:none;align-items:center;}
+    .nav-links a{color:rgba(255,255,255,.65);text-decoration:none;font-family:'Oswald',sans-serif;font-weight:400;font-size:.85rem;letter-spacing:2px;text-transform:uppercase;padding:.5rem .9rem;border-radius:3px;transition:color .2s;}
+    .nav-links a:hover{color:var(--amber);}
+    .nav-cta-btn{background:var(--amber)!important;color:var(--teal-darkest)!important;font-weight:700!important;padding:.6rem 1.4rem!important;border-radius:4px!important;}
+    .nav-cta-btn:hover{background:var(--amber-light)!important;}
+    .nav-phone{color:var(--amber)!important;font-weight:600!important;}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;}
+    .hamburger span{display:block;width:26px;height:2px;background:var(--white);transition:.3s;}
+    .mobile-menu{display:none;flex-direction:column;position:fixed;top:calc(72px + 36px);left:0;right:0;background:var(--teal-darkest);padding:2rem 5%;z-index:999;border-bottom:2px solid var(--amber);gap:.5rem;}
+    .mobile-menu.open{display:flex;}
+    .mobile-menu a{color:rgba(255,255,255,.7);text-decoration:none;font-family:'Oswald',sans-serif;font-size:1.1rem;letter-spacing:2px;text-transform:uppercase;padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.06);}
+    .mobile-menu a:last-child{border-bottom:none;color:var(--amber);font-weight:700;}
 
-        .social-button {
-            background-color: #ffa726;
-            color: white;
-            font-size: 1rem;
-            padding: 10px 15px;
-            border-radius: 5px;
-            border: none;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
+    /* HERO */
+    #home{min-height:100vh;background:linear-gradient(160deg,var(--teal-darkest) 0%,var(--teal-mid) 60%,var(--teal) 100%);display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:80px 5% 60px;position:relative;overflow:hidden;gap:4rem;}
+    .hero-hex{position:absolute;inset:0;overflow:hidden;pointer-events:none;}
+    .hero-hex svg{width:100%;height:100%;opacity:.06;}
+    .hero-left{position:relative;z-index:2;}
+    .hero-eyebrow{display:inline-flex;align-items:center;gap:.6rem;background:rgba(245,166,35,.12);border:1px solid rgba(245,166,35,.4);color:var(--amber-light);font-family:'Oswald',sans-serif;font-size:.78rem;font-weight:500;letter-spacing:3px;text-transform:uppercase;padding:.45rem 1rem;border-radius:2px;margin-bottom:1.8rem;animation:fadeUp .7s ease both;}
+    .hero-logo-wrap{margin-bottom:1.5rem;animation:fadeUp .7s .08s ease both;}
+    .hero-logo-wrap img{height:110px;width:auto;filter:drop-shadow(0 4px 24px rgba(245,166,35,.25));}
+    .hero-title{font-family:'Oswald',sans-serif;font-size:clamp(2.4rem,5vw,4.8rem);font-weight:700;color:var(--white);line-height:1;letter-spacing:1px;text-transform:uppercase;margin-bottom:.5rem;animation:fadeUp .7s .12s ease both;}
+    .hero-title .llc{font-weight:300;font-size:.45em;letter-spacing:6px;color:rgba(255,255,255,.4);vertical-align:middle;}
+    .hero-tagline{font-family:'Oswald',sans-serif;font-size:clamp(.9rem,1.8vw,1.15rem);font-weight:400;letter-spacing:4px;text-transform:uppercase;color:var(--amber);margin-bottom:2rem;animation:fadeUp .7s .18s ease both;}
+    .hero-desc{font-size:1.05rem;font-weight:300;line-height:1.85;color:rgba(255,255,255,.65);max-width:480px;margin-bottom:2.5rem;animation:fadeUp .7s .24s ease both;}
+    .hero-actions{display:flex;gap:1rem;flex-wrap:wrap;animation:fadeUp .7s .3s ease both;margin-bottom:3rem;}
+    .btn-primary{background:var(--amber);color:var(--teal-darkest);font-family:'Oswald',sans-serif;font-weight:600;font-size:1rem;letter-spacing:2px;text-transform:uppercase;padding:1rem 2.4rem;border-radius:4px;text-decoration:none;border:none;cursor:pointer;transition:background .2s,transform .15s,box-shadow .2s;display:inline-flex;align-items:center;gap:.5rem;box-shadow:0 4px 20px rgba(245,166,35,.35);}
+    .btn-primary:hover{background:var(--amber-light);transform:translateY(-2px);box-shadow:0 8px 30px rgba(245,166,35,.5);}
+    .btn-ghost{background:transparent;border:2px solid rgba(255,255,255,.25);color:rgba(255,255,255,.8);font-family:'Oswald',sans-serif;font-weight:400;font-size:1rem;letter-spacing:2px;text-transform:uppercase;padding:1rem 2.4rem;border-radius:4px;text-decoration:none;transition:border-color .2s,color .2s;display:inline-block;}
+    .btn-ghost:hover{border-color:var(--amber);color:var(--amber);}
+    .hero-phone-block{animation:fadeUp .7s .36s ease both;display:flex;align-items:center;gap:1.2rem;border-top:1px solid rgba(255,255,255,.1);padding-top:2rem;}
+    .hero-phone-icon{width:52px;height:52px;flex-shrink:0;background:var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;animation:pulseIcon 2.5s infinite;}
+    @keyframes pulseIcon{0%,100%{transform:scale(1);}50%{transform:scale(1.08);}}
+    .hero-phone-block a{font-family:'Oswald',sans-serif;font-size:2rem;font-weight:600;letter-spacing:2px;color:var(--white);text-decoration:none;transition:color .2s;display:block;line-height:1;}
+    .hero-phone-block a:hover{color:var(--amber);}
+    .hero-phone-block p{font-size:.75rem;color:var(--text-muted);letter-spacing:2px;text-transform:uppercase;margin-top:.3rem;}
+    .hero-right{position:relative;z-index:2;display:flex;flex-direction:column;gap:1rem;}
+    .trust-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-left:4px solid var(--amber);border-radius:6px;padding:1.4rem 1.6rem;display:flex;align-items:flex-start;gap:1rem;backdrop-filter:blur(6px);transition:background .25s,transform .25s;animation:fadeUp .7s ease both;}
+    .trust-card:nth-child(1){animation-delay:.15s;} .trust-card:nth-child(2){animation-delay:.25s;} .trust-card:nth-child(3){animation-delay:.35s;} .trust-card:nth-child(4){animation-delay:.45s;} .trust-card:nth-child(5){animation-delay:.55s;}
+    .trust-card:hover{background:rgba(255,255,255,.09);transform:translateX(4px);}
+    .trust-card-icon{font-size:1.8rem;flex-shrink:0;margin-top:2px;}
+    .trust-card h4{font-family:'Oswald',sans-serif;font-size:1rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--white);margin-bottom:.3rem;}
+    .trust-card p{font-size:.88rem;font-weight:300;color:rgba(255,255,255,.55);line-height:1.5;}
 
-        .social-button img {
-            width: 30px;
-            height: 30px;
-        }
+    /* PROOF BAR */
+    .proof-bar{background:var(--amber);padding:1.1rem 5%;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:2.5rem;}
+    .proof-item{display:flex;align-items:center;gap:.6rem;font-family:'Oswald',sans-serif;font-size:.88rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--teal-darkest);}
 
-        .social-button:hover {
-            background-color: #ff8a50;
-        }
+    /* SECTIONS */
+    section{padding:100px 5%;}
+    .section-chip{display:inline-block;background:var(--light-teal);color:var(--teal-light);font-family:'Oswald',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:4px;text-transform:uppercase;padding:.4rem 1rem;border-radius:2px;margin-bottom:1rem;}
+    .section-chip.amber-chip{background:rgba(245,166,35,.12);color:var(--amber-dark);}
+    .section-chip.white-chip{background:rgba(255,255,255,.1);color:rgba(255,255,255,.6);}
+    .section-heading{font-family:'Oswald',sans-serif;font-size:clamp(2.2rem,4vw,3.5rem);font-weight:700;text-transform:uppercase;letter-spacing:1px;line-height:1.05;color:var(--teal-darkest);margin-bottom:1.5rem;}
+    .section-heading.light{color:var(--white);}
+    .section-heading em{font-style:normal;color:var(--teal-bright);font-weight:300;}
+    .section-heading .amber{color:var(--amber);}
 
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .nav-container {
-                flex-wrap: wrap;
-                gap: 5px;
-            }
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-            .hero p {
-                font-size: 1rem;
-            }
-            .hero button {
-                font-size: 0.9rem;
-                padding: 10px 20px;
-            }
-            .logo {
-                max-width: 90%;
-            }
-            section {
-                padding: 1.5rem;
-            }
-        }
-    </style>
+    /* ABOUT */
+    #about{background:var(--white);}
+    .about-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:6rem;align-items:center;max-width:1200px;margin:0 auto;}
+    .about-photo-block{position:relative;}
+    .about-photo-frame{width:100%;aspect-ratio:3/4;background:linear-gradient(145deg,var(--teal-mid),var(--teal-light));border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 30px 80px rgba(8,38,40,.25);}
+    .about-photo-placeholder{text-align:center;padding:2rem;color:rgba(255,255,255,.35);font-family:'Oswald',sans-serif;font-size:.85rem;letter-spacing:2px;text-transform:uppercase;}
+    .about-photo-placeholder .big-icon{font-size:4rem;display:block;margin-bottom:1rem;opacity:.4;}
+    .about-badge{position:absolute;bottom:-24px;left:-24px;background:var(--amber);border-radius:8px;padding:1.6rem 2rem;box-shadow:0 10px 40px rgba(245,166,35,.4);text-align:center;min-width:140px;}
+    .about-badge .big-num{font-family:'Oswald',sans-serif;font-size:3rem;font-weight:700;color:var(--teal-darkest);line-height:1;}
+    .about-badge p{font-family:'Oswald',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--teal-dark);margin-top:.3rem;}
+    .about-logo-corner{position:absolute;top:-20px;right:-20px;background:var(--teal-darkest);border-radius:50%;padding:12px;box-shadow:0 8px 30px rgba(8,38,40,.4);}
+    .about-logo-corner img{height:60px;width:auto;display:block;}
+    .about-body{font-size:1.05rem;font-weight:300;line-height:1.9;color:var(--text-mid);}
+    .about-body+.about-body{margin-top:1rem;}
+    .about-quote{margin:2rem 0;border-left:4px solid var(--amber);padding:1rem 1.5rem;background:var(--light-teal);border-radius:0 6px 6px 0;}
+    .about-quote p{font-size:1.15rem;font-style:italic;color:var(--teal-dark);line-height:1.7;}
+    .about-quote cite{display:block;margin-top:.5rem;font-family:'Oswald',sans-serif;font-size:.8rem;letter-spacing:2px;text-transform:uppercase;color:var(--text-muted);font-style:normal;}
+    .about-credentials{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem;}
+    .cred-badge{background:var(--teal-darkest);color:var(--amber);font-family:'Oswald',sans-serif;font-size:.75rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:.5rem 1rem;border-radius:4px;}
+    .about-stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2.5rem;}
+    .mini-stat{text-align:center;background:var(--light-teal);border-radius:8px;padding:1.2rem 1rem;}
+    .mini-stat .num{font-family:'Oswald',sans-serif;font-size:2rem;font-weight:700;color:var(--teal-dark);line-height:1;}
+    .mini-stat p{font-size:.72rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);margin-top:.3rem;}
+
+    /* WHY */
+    #why{background:var(--teal-dark);}
+    .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:3.5rem;max-width:1200px;margin-left:auto;margin-right:auto;}
+    .why-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:8px;padding:2.5rem 2rem;position:relative;overflow:hidden;transition:transform .3s,border-color .3s,background .3s;}
+    .why-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--amber),var(--amber-light));transform:scaleX(0);transform-origin:left;transition:transform .4s ease;}
+    .why-card:hover{transform:translateY(-5px);border-color:rgba(245,166,35,.25);background:rgba(255,255,255,.07);}
+    .why-card:hover::after{transform:scaleX(1);}
+    .why-number{font-family:'Oswald',sans-serif;font-size:4rem;font-weight:700;color:rgba(245,166,35,.1);line-height:1;position:absolute;top:1rem;right:1.5rem;}
+    .why-icon{font-size:2.5rem;margin-bottom:1.2rem;display:block;}
+    .why-card h3{font-family:'Oswald',sans-serif;font-size:1.3rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--white);margin-bottom:.8rem;}
+    .why-card p{font-size:.95rem;font-weight:300;color:rgba(255,255,255,.55);line-height:1.75;}
+    .why-card .highlight{display:inline-block;margin-top:1rem;color:var(--amber);font-family:'Oswald',sans-serif;font-size:.82rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;}
+
+    /* SERVICES */
+    #services{background:var(--off-white);}
+    .services-intro{max-width:1200px;margin:0 auto 4rem;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:end;}
+    .services-intro p{font-size:1rem;font-weight:300;line-height:1.8;color:var(--text-mid);}
+    .services-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;}
+    .svc-card{background:var(--white);border:1px solid rgba(10,50,53,.08);border-radius:8px;overflow:hidden;transition:transform .3s,box-shadow .3s;box-shadow:0 2px 12px rgba(8,38,40,.06);}
+    .svc-card:hover{transform:translateY(-6px);box-shadow:0 16px 50px rgba(8,38,40,.14);}
+    .svc-top{background:linear-gradient(135deg,var(--teal-mid),var(--teal));padding:2rem 2rem 1.5rem;}
+    .svc-icon{font-size:2.8rem;display:block;margin-bottom:.8rem;}
+    .svc-card h3{font-family:'Oswald',sans-serif;font-size:1.3rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--white);}
+    .svc-body{padding:1.5rem 2rem 2rem;}
+    .svc-body p{font-size:.95rem;font-weight:300;line-height:1.75;color:var(--text-mid);}
+    .svc-features{list-style:none;margin-top:1.2rem;display:flex;flex-direction:column;gap:.5rem;}
+    .svc-features li{font-size:.88rem;color:var(--text-mid);display:flex;align-items:center;gap:.5rem;}
+    .svc-features li::before{content:'✓';color:var(--amber-dark);font-weight:700;flex-shrink:0;}
+
+    /* GUARANTEE */
+    #guarantee{background:var(--amber);padding:70px 5%;}
+    .guarantee-inner{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:auto 1fr;gap:4rem;align-items:center;}
+    .guarantee-seal{width:180px;height:180px;flex-shrink:0;background:var(--teal-darkest);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:1.5rem;box-shadow:0 15px 50px rgba(8,38,40,.35);border:4px solid rgba(255,255,255,.15);}
+    .guarantee-seal .seal-icon{font-size:2.5rem;margin-bottom:.4rem;}
+    .guarantee-seal h4{font-family:'Oswald',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--amber);line-height:1.3;}
+    .guarantee-text h2{font-family:'Oswald',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--teal-darkest);margin-bottom:1rem;}
+    .guarantee-text p{font-size:1.05rem;line-height:1.8;color:rgba(8,38,40,.75);margin-bottom:.75rem;}
+    .guarantee-points{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem;}
+    .gpoint{background:rgba(8,38,40,.1);color:var(--teal-darkest);font-family:'Oswald',sans-serif;font-size:.8rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:.5rem 1rem;border-radius:4px;}
+
+    /* PROCESS */
+    #process{background:var(--white);}
+    .process-intro{text-align:center;margin-bottom:4rem;}
+    .process-intro p{color:var(--text-mid);font-weight:300;font-size:1rem;max-width:500px;margin:.75rem auto 0;}
+    .process-grid{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;}
+    .process-grid::before{content:'';position:absolute;top:36px;left:12.5%;right:12.5%;height:2px;background:linear-gradient(90deg,var(--amber),var(--teal-bright));}
+    .process-step{text-align:center;padding:0 1rem;}
+    .step-circle{width:72px;height:72px;background:var(--teal-darkest);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:1.6rem;border:3px solid var(--amber);position:relative;z-index:1;box-shadow:0 4px 20px rgba(8,38,40,.2);}
+    .process-step h4{font-family:'Oswald',sans-serif;font-size:1rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--teal-darkest);margin-bottom:.5rem;}
+    .process-step p{font-size:.88rem;font-weight:300;color:var(--text-mid);line-height:1.6;}
+
+    /* AREA */
+    #area{background:var(--off-white);}
+    .area-wrap{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
+    .area-towns{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:2rem;}
+    .town-pill{background:var(--white);border:1.5px solid rgba(10,50,53,.12);color:var(--teal-dark);font-family:'Oswald',sans-serif;font-size:.82rem;font-weight:500;letter-spacing:1px;text-transform:uppercase;padding:.45rem 1rem;border-radius:30px;transition:all .2s;cursor:default;}
+    .town-pill:hover{background:var(--amber);border-color:var(--amber);color:var(--teal-darkest);}
+    .town-pill.primary{background:var(--teal-darkest);border-color:var(--teal-darkest);color:var(--amber);}
+    .area-callout{background:var(--teal-darkest);border-radius:12px;padding:3rem;border-top:4px solid var(--amber);box-shadow:0 20px 60px rgba(8,38,40,.2);}
+    .area-callout h3{font-family:'Oswald',sans-serif;font-size:1.8rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--white);margin-bottom:1rem;}
+    .area-callout p{color:rgba(255,255,255,.55);font-weight:300;line-height:1.8;margin-bottom:2rem;}
+    .area-contact-options{display:flex;flex-direction:column;gap:1rem;}
+    .area-contact-row{display:flex;align-items:center;gap:1rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:1rem 1.2rem;text-decoration:none;transition:background .2s,border-color .2s;}
+    .area-contact-row:hover{background:rgba(245,166,35,.1);border-color:rgba(245,166,35,.3);}
+    .acon-icon{width:42px;height:42px;flex-shrink:0;background:var(--amber);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;}
+    .acon-label{font-family:'Oswald',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--text-muted);}
+    .acon-value{font-family:'Oswald',sans-serif;font-size:1.1rem;font-weight:600;color:var(--white);letter-spacing:1px;}
+
+    /* TESTIMONIALS */
+    #testimonials{background:var(--teal-darkest);}
+    .testimonials-grid{max-width:1200px;margin:3.5rem auto 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;}
+    .tcard{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:2.5rem;position:relative;transition:transform .3s,border-color .3s;}
+    .tcard:hover{transform:translateY(-4px);border-color:rgba(245,166,35,.2);}
+    .tcard-qmark{font-family:Georgia,serif;font-size:6rem;line-height:.7;color:var(--amber);opacity:.2;position:absolute;top:1.5rem;right:2rem;pointer-events:none;}
+    .tcard-stars{font-size:1rem;color:var(--amber);letter-spacing:2px;margin-bottom:1.2rem;}
+    .tcard p{font-size:1rem;font-weight:300;line-height:1.85;color:rgba(255,255,255,.7);font-style:italic;margin-bottom:1.8rem;}
+    .tcard-author{display:flex;align-items:center;gap:1rem;border-top:1px solid rgba(255,255,255,.07);padding-top:1.2rem;}
+    .tcard-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--teal-bright));display:flex;align-items:center;justify-content:center;font-family:'Oswald',sans-serif;font-weight:700;font-size:1.1rem;color:var(--white);flex-shrink:0;}
+    .tcard-name{font-family:'Oswald',sans-serif;font-size:.9rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--white);}
+    .tcard-loc{font-size:.78rem;color:var(--text-muted);margin-top:.2rem;}
+    .reviews-link{text-align:center;margin-top:3rem;}
+    .reviews-link a{display:inline-flex;align-items:center;gap:.6rem;color:var(--amber);font-family:'Oswald',sans-serif;font-size:.9rem;font-weight:500;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(245,166,35,.3);padding-bottom:2px;transition:border-color .2s;}
+    .reviews-link a:hover{border-color:var(--amber);}
+
+    /* FINANCING STRIP */
+    .financing-strip{background:var(--teal-mid);padding:2.5rem 5%;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);}
+    .financing-strip p{color:rgba(255,255,255,.6);font-weight:300;}
+    .financing-strip strong{color:var(--white);}
+
+    /* CONTACT */
+    #contact{background:var(--teal-dark);}
+    .contact-wrap{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1.2fr;gap:6rem;}
+    .contact-left>p{font-size:1.05rem;font-weight:300;line-height:1.85;color:rgba(255,255,255,.55);margin-bottom:3rem;}
+    .contact-items{display:flex;flex-direction:column;gap:1.5rem;}
+    .citem{display:flex;gap:1.2rem;align-items:flex-start;}
+    .citem-icon{width:50px;height:50px;flex-shrink:0;background:rgba(245,166,35,.12);border:1px solid rgba(245,166,35,.3);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;}
+    .citem-label{font-family:'Oswald',sans-serif;font-size:.7rem;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--amber);margin-bottom:.25rem;}
+    .citem a,.citem p{font-size:1rem;color:var(--white);text-decoration:none;font-weight:300;transition:color .2s;}
+    .citem a:hover{color:var(--amber);}
+    .social-links{display:flex;gap:.75rem;margin-top:2.5rem;}
+    .slink{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.6);font-family:'Oswald',sans-serif;font-size:.78rem;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;padding:.65rem 1.2rem;border-radius:4px;text-decoration:none;transition:all .2s;}
+    .slink:hover{background:var(--amber);border-color:var(--amber);color:var(--teal-darkest);}
+    .contact-form-wrap{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:3rem;}
+    .form-header{font-family:'Oswald',sans-serif;font-size:1.4rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--white);margin-bottom:.4rem;}
+    .form-subheader{font-size:.88rem;font-weight:300;color:rgba(255,255,255,.4);margin-bottom:2rem;}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+    .fgroup{display:flex;flex-direction:column;gap:.4rem;}
+    .fgroup.full{grid-column:1 / -1;}
+    .fgroup label{font-family:'Oswald',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.4);}
+    .fgroup input,.fgroup select,.fgroup textarea{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:var(--white);font-family:'Source Serif 4',serif;font-size:.97rem;font-weight:300;padding:.85rem 1rem;border-radius:6px;outline:none;transition:border-color .2s,background .2s;width:100%;}
+    .fgroup input::placeholder,.fgroup textarea::placeholder{color:rgba(255,255,255,.2);}
+    .fgroup input:focus,.fgroup select:focus,.fgroup textarea:focus{border-color:var(--amber);background:rgba(255,255,255,.09);}
+    .fgroup select option{background:var(--teal-dark);color:var(--white);}
+    .fgroup textarea{resize:vertical;min-height:110px;}
+    .form-submit{width:100%;margin-top:1rem;background:var(--amber);color:var(--teal-darkest);font-family:'Oswald',sans-serif;font-weight:700;font-size:1rem;letter-spacing:2.5px;text-transform:uppercase;padding:1.1rem;border:none;border-radius:6px;cursor:pointer;transition:background .2s,transform .15s,box-shadow .2s;box-shadow:0 4px 20px rgba(245,166,35,.3);}
+    .form-submit:hover{background:var(--amber-light);transform:translateY(-2px);box-shadow:0 8px 30px rgba(245,166,35,.45);}
+    .form-note{font-size:.78rem;color:rgba(255,255,255,.3);text-align:center;margin-top:.75rem;}
+    .form-success{display:none;background:rgba(245,166,35,.1);border:1px solid var(--amber);color:var(--amber);font-family:'Oswald',sans-serif;font-size:1rem;font-weight:500;letter-spacing:1px;text-align:center;padding:1.5rem;border-radius:8px;margin-top:1rem;}
+
+    /* FOOTER */
+    footer{background:var(--teal-darkest);padding:3rem 5% 1.5rem;border-top:1px solid rgba(255,255,255,.06);}
+    .footer-top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:2rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,.06);margin-bottom:1.5rem;}
+    .footer-logo img{height:60px;width:auto;}
+    .footer-links{display:flex;gap:2rem;flex-wrap:wrap;list-style:none;}
+    .footer-links a{color:rgba(255,255,255,.4);font-family:'Oswald',sans-serif;font-size:.8rem;letter-spacing:2px;text-transform:uppercase;text-decoration:none;transition:color .2s;}
+    .footer-links a:hover{color:var(--amber);}
+    .footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;}
+    .footer-bottom p{color:rgba(255,255,255,.25);font-size:.82rem;}
+    .amber-txt{color:var(--amber);}
+
+    /* FLOAT */
+    .float-call{position:fixed;bottom:2rem;right:2rem;z-index:500;background:var(--amber);color:var(--teal-darkest);font-family:'Oswald',sans-serif;font-weight:700;font-size:.9rem;letter-spacing:1.5px;text-transform:uppercase;padding:.9rem 1.8rem;border-radius:50px;text-decoration:none;display:flex;align-items:center;gap:.5rem;transition:transform .2s,box-shadow .2s;animation:floatPulse 2.5s infinite;}
+    .float-call:hover{transform:translateY(-3px);}
+    @keyframes floatPulse{0%,100%{box-shadow:0 8px 30px rgba(245,166,35,.45);}50%{box-shadow:0 8px 50px rgba(245,166,35,.7);}}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
+
+    /* RESPONSIVE */
+    @media(max-width:1024px){
+      #home{grid-template-columns:1fr;padding-top:100px;}
+      .hero-right{display:none;}
+      .about-grid,.area-wrap,.contact-wrap,.services-intro{grid-template-columns:1fr;gap:3rem;}
+      .guarantee-inner{grid-template-columns:1fr;text-align:center;}
+      .guarantee-seal{margin:0 auto;}
+      .process-grid{grid-template-columns:repeat(2,1fr);}
+      .process-grid::before{display:none;}
+    }
+    @media(max-width:768px){
+      .nav-links{display:none;}
+      .hamburger{display:flex;}
+      .process-grid{grid-template-columns:1fr;}
+      .form-grid{grid-template-columns:1fr;}
+      .footer-top{flex-direction:column;align-items:flex-start;}
+      section{padding:60px 5%;}
+    }
+    @media(max-width:500px){
+      .about-badge{left:0;bottom:-20px;}
+      .about-stats-row{grid-template-columns:1fr 1fr;}
+      .contact-form-wrap{padding:2rem 1.5rem;}
+      .guarantee-inner{gap:2rem;}
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav class="nav-container">
-            <a href="#home" aria-label="Go to Home">Home</a>
-            <a href="#about" aria-label="Go to About Us">About</a>
-            <a href="#services" aria-label="Go to Services">Services</a>
-            <a href="#testimonials" aria-label="Go to Testimonials">Testimonials</a>
-            <a href="#contact" aria-label="Go to Contact">Contact</a>
-        </nav>
-    </header>
 
-    <div class="logo-container">
-        <img src="websitelogo.png" alt="Brian Benson HVAC Logo" class="logo">
+<!-- ANNOUNCEMENT BAR -->
+<div class="announce-bar">
+  <span class="pulse-dot"></span>
+  <span>🔥 Now Scheduling Spring AC Tune-Ups — Book Before the Rush!</span>
+  <a href="#contact">Reserve Your Spot →</a>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#home">
+    <img src="https://www.brianbensonhvac.com/websitelogo.png" alt="Brian Benson HVAC LLC"/>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About Brian</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#area">Service Area</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="tel:8452170873" class="nav-phone">📞 845-217-0873</a></li>
+    <li><a href="#contact" class="nav-cta-btn">Free Quote</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="toggleMenu()">About Brian</a>
+  <a href="#why" onclick="toggleMenu()">Why Us</a>
+  <a href="#services" onclick="toggleMenu()">Services</a>
+  <a href="#area" onclick="toggleMenu()">Service Area</a>
+  <a href="#testimonials" onclick="toggleMenu()">Reviews</a>
+  <a href="#contact" onclick="toggleMenu()">Get a Free Quote →</a>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-hex">
+    <svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <defs><pattern id="hex" x="0" y="0" width="80" height="92" patternUnits="userSpaceOnUse"><polygon points="40,0 80,23 80,69 40,92 0,69 0,23" fill="none" stroke="rgba(245,166,35,.5)" stroke-width="1"/></pattern></defs>
+      <rect width="1200" height="800" fill="url(#hex)"/>
+    </svg>
+  </div>
+  <div class="hero-left">
+    <div class="hero-eyebrow">⚡ Hudson Valley's Trusted HVAC Expert</div>
+    <div class="hero-logo-wrap">
+      <img src="https://www.brianbensonhvac.com/websitelogo.png" alt="Brian Benson HVAC"/>
     </div>
+    <h1 class="hero-title">Brian Benson HVAC <span class="llc">LLC</span></h1>
+    <p class="hero-tagline">Your Comfort Is Our Commitment</p>
+    <p class="hero-desc">Licensed. Insured. Honest. We treat your home like our own — no upselling, no surprises, just real HVAC work done right the first time.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">🗓 Get a Free Estimate</a>
+      <a href="#why" class="btn-ghost">Why Choose Brian?</a>
+    </div>
+    <div class="hero-phone-block">
+      <div class="hero-phone-icon">📞</div>
+      <div>
+        <a href="tel:8452170873">845-217-0873</a>
+        <p>24/7 Emergency Line &nbsp;·&nbsp; Call or Text Anytime</p>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="trust-card"><div class="trust-card-icon">🏅</div><div><h4>Licensed &amp; Insured</h4><p>Fully licensed in New York State. Every job is backed by proper insurance so you're always protected.</p></div></div>
+    <div class="trust-card"><div class="trust-card-icon">🚨</div><div><h4>True 24/7 Emergency Service</h4><p>No heat at midnight in January? We answer the phone. Real emergencies get real responses — not voicemail.</p></div></div>
+    <div class="trust-card"><div class="trust-card-icon">💰</div><div><h4>Upfront, Honest Pricing</h4><p>We quote before we work. No hidden fees, no surprise invoices. You'll know exactly what you're paying.</p></div></div>
+    <div class="trust-card"><div class="trust-card-icon">🔧</div><div><h4>Fix It Right the First Time</h4><p>We don't throw parts at a problem. We diagnose properly and fix the root cause so it doesn't come back.</p></div></div>
+    <div class="trust-card"><div class="trust-card-icon">🤝</div><div><h4>Built on Referrals &amp; Trust</h4><p>Most of our business comes from neighbors recommending us to neighbors. That's the standard we hold ourselves to.</p></div></div>
+  </div>
+</section>
 
-    <section id="home" class="hero">
-        <h1>Welcome to Brian Benson HVAC</h1>
-        <p>Your Trusted Heating & Cooling Experts</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScWX1ycY3gfqG7XQVEXEfAXDhQMfVD6spjUQBeNpm5Mi_F6Wg/viewform?embedded=true" target="_blank">
-            <button>Get a Quote</button>
-        </a>
-    </section>
+<!-- PROOF BAR -->
+<div class="proof-bar">
+  <div class="proof-item">✔ Licensed &amp; Insured</div>
+  <div class="proof-item">✔ 24/7 Emergency Response</div>
+  <div class="proof-item">✔ Free Estimates</div>
+  <div class="proof-item">✔ Upfront Pricing</div>
+  <div class="proof-item">✔ Financing Available</div>
+  <div class="proof-item">✔ Hudson Valley Owned &amp; Operated</div>
+</div>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>At Brian Benson HVAC, we are committed to delivering reliable heating and cooling solutions with excellent customer service. Our goal is to ensure your comfort with professional, efficient, and affordable HVAC services.</p>
-    </section>
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-photo-block">
+      <div class="about-photo-frame">
+        <div class="about-photo-placeholder">
+          <span class="big-icon">👷</span>
+          Add a photo of Brian here<br/>
+          <small style="font-size:.7rem;opacity:.4;letter-spacing:1px;">Replace with an &lt;img&gt; tag</small>
+        </div>
+      </div>
+      <div class="about-badge"><div class="big-num">100%</div><p>Satisfaction<br>Commitment</p></div>
+      <div class="about-logo-corner"><img src="https://www.brianbensonhvac.com/websitelogo.png" alt="BB HVAC"/></div>
+    </div>
+    <div>
+      <div class="section-chip">Meet Your Technician</div>
+      <h2 class="section-heading">Hi, I'm Brian.<br><em>I Do the Work Myself.</em></h2>
+      <p class="about-body">When you call Brian Benson HVAC, you get <strong>Brian</strong>. Not a dispatcher, not a random subcontractor — me, at your door, with the tools and know-how to solve your problem.</p>
+      <p class="about-body">I've built this business on one principle: treat every customer's home the way I'd want someone to treat mine. That means arriving on time, explaining everything in plain language, and never recommending something you don't actually need.</p>
+      <div class="about-quote">
+        <p>"I won't sell you a new system if your old one just needs a tune-up. My goal is to earn your trust — not a quick sale."</p>
+        <cite>— Brian Benson, Owner</cite>
+      </div>
+      <p class="about-body">Based right here in Saugerties, I serve the communities I grew up around. The Hudson Valley is home — and I take pride in keeping it comfortable year-round.</p>
+      <div class="about-credentials">
+        <div class="cred-badge">✔ NY State Licensed</div>
+        <div class="cred-badge">✔ Fully Insured</div>
+        <div class="cred-badge">✔ EPA 608 Certified</div>
+        <div class="cred-badge">✔ Synchrony Financing Partner</div>
+      </div>
+      <div class="about-stats-row">
+        <div class="mini-stat"><div class="num">24/7</div><p>Emergency<br>Availability</p></div>
+        <div class="mini-stat"><div class="num">Fast</div><p>Same-Day<br>Response</p></div>
+        <div class="mini-stat"><div class="num">Local</div><p>Saugerties<br>NY Based</p></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li><strong>HVAC Installation:</strong> High-efficiency heating and cooling systems tailored to your needs.</li>
-            <li><strong>Repairs & Maintenance:</strong> Quick and effective solutions to keep your HVAC system running smoothly.</li>
-            <li><strong>Air Quality Solutions:</strong> Improve indoor air quality with filtration and ventilation systems.</li>
-            <li><strong>Emergency Services:</strong> 24/7 assistance for urgent HVAC issues.</li>
-        </ul>
-    </section>
-    <a href="https://www.synchrony.com/mmc/HY237598002?sitecode=acewel403"><img alt="Flexible financing available through Synchrony" src="https://www.synchronybusiness.com/mmc/assets/hms-0506_marketingrepositoryad2_160x600_final.jpg" /></a>
+<!-- WHY BRIAN -->
+<section id="why">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="section-chip white-chip">The Brian Benson Difference</div>
+    <h2 class="section-heading light" style="max-width:600px;">Reasons Customers <span class="amber">Never Call Anyone Else</span></h2>
+  </div>
+  <div class="why-grid">
+    <div class="why-card"><div class="why-number">01</div><span class="why-icon">🎯</span><h3>Accurate Diagnosis First</h3><p>Most HVAC problems are misdiagnosed. We take the time to find the real issue — not just the symptom — so the fix actually lasts.</p><span class="highlight">→ No repeat service calls</span></div>
+    <div class="why-card"><div class="why-number">02</div><span class="why-icon">📋</span><h3>Written Quotes Before Work Starts</h3><p>Every job gets a clear, written estimate before we touch anything. You decide. No pressure. No surprises on the invoice.</p><span class="highlight">→ 100% price transparency</span></div>
+    <div class="why-card"><div class="why-number">03</div><span class="why-icon">⏱</span><h3>We Show Up On Time</h3><p>Your time matters. We give arrival windows and we stick to them. If something changes, we call ahead — always.</p><span class="highlight">→ Respect for your schedule</span></div>
+    <div class="why-card"><div class="why-number">04</div><span class="why-icon">🧹</span><h3>We Leave It Cleaner Than We Found It</h3><p>Drop cloths, shoe covers, and a full cleanup when we're done. Your home stays clean — period.</p><span class="highlight">→ Treated like our own home</span></div>
+    <div class="why-card"><div class="why-number">05</div><span class="why-icon">📞</span><h3>You Can Always Reach Us</h3><p>Call or text — we respond. No black hole voicemails. No waiting days for a callback. Real communication from a real person.</p><span class="highlight">→ Responsive &amp; reachable</span></div>
+    <div class="why-card"><div class="why-number">06</div><span class="why-icon">❤️</span><h3>We Actually Care About Your Comfort</h3><p>This isn't a volume business. Every job matters to us because our reputation depends on it — and so does your family's comfort.</p><span class="highlight">→ Your neighbor, not a corporation</span></div>
+  </div>
+</section>
 
-    <section id="testimonials">
-        <h2>Testimonials</h2>
-        <p>"Brian Benson HVAC exceeded my expectations! Quick service and fair pricing. Highly recommended!"</p>
-        <p>"Honest, professional, and reliable. Will definitely use their services again!"</p>
-    </section>
+<!-- SERVICES -->
+<section id="services">
+  <div class="services-intro">
+    <div>
+      <div class="section-chip amber-chip">What We Do</div>
+      <h2 class="section-heading">Full-Service<br>Heating &amp; Cooling</h2>
+    </div>
+    <div><p>From a simple filter swap to a full system replacement, we handle every aspect of your home or business HVAC needs. All work is performed to code, on schedule, and backed by our personal commitment to quality.</p></div>
+  </div>
+  <div class="services-grid">
+    <div class="svc-card"><div class="svc-top"><span class="svc-icon">❄️🔥</span><h3>HVAC Installation</h3></div><div class="svc-body"><p>New construction or full system replacement — we design and install high-efficiency systems tailored to your home's exact needs and your budget.</p><ul class="svc-features"><li>Central air &amp; heating systems</li><li>Mini-split / ductless systems</li><li>Heat pumps</li><li>Free load calculation &amp; sizing</li></ul></div></div>
+    <div class="svc-card"><div class="svc-top"><span class="svc-icon">🔧</span><h3>Repairs &amp; Diagnostics</h3></div><div class="svc-body"><p>Something not working right? We diagnose it properly and fix it fast. Same-day service available for most repairs.</p><ul class="svc-features"><li>All makes &amp; models serviced</li><li>Accurate root-cause diagnosis</li><li>Honest repair vs. replace advice</li><li>Same-day response when possible</li></ul></div></div>
+    <div class="svc-card"><div class="svc-top"><span class="svc-icon">🛠</span><h3>Maintenance &amp; Tune-Ups</h3></div><div class="svc-body"><p>A well-maintained system runs more efficiently, lasts longer, and breaks down less. Schedule your seasonal tune-up before peak season hits.</p><ul class="svc-features"><li>Spring AC tune-ups</li><li>Fall heating inspections</li><li>Filter &amp; coil cleaning</li><li>Safety checks &amp; performance reports</li></ul></div></div>
+    <div class="svc-card"><div class="svc-top"><span class="svc-icon">💨</span><h3>Air Quality Solutions</h3></div><div class="svc-body"><p>The air inside your home can be more polluted than outside. We offer solutions that make a real, measurable difference in what your family breathes.</p><ul class="svc-features"><li>HEPA &amp; media filtration</li><li>UV air purifiers</li><li>Whole-home dehumidifiers</li><li>Ventilation &amp; fresh air systems</li></ul></div></div>
+    <div class="svc-card"><div class="svc-top"><span class="svc-icon">🚨</span><h3>24/7 Emergency Service</h3></div><div class="svc-body"><p>No heat in a Hudson Valley winter or no AC in August is a genuine emergency. We answer. We show up. We fix it.</p><ul class="svc-features"><li>True 24/7 availability</li><li>Fast response times</li><li>Upfront emergency pricing</li><li>All brands serviced</li></ul></div></div>
+    <div class="svc-card"><div class="svc-top"><span class="svc-icon">🏢</span><h3>Commercial HVAC</h3></div><div class="svc-body"><p>We serve local businesses too. From restaurants to offices to retail, we keep your commercial space comfortable and your equipment running.</p><ul class="svc-features"><li>Commercial installation &amp; service</li><li>Scheduled maintenance plans</li><li>Rooftop unit service</li><li>Priority scheduling for businesses</li></ul></div></div>
+  </div>
+</section>
 
-    <section id="contact">
-       <h2>Contact Us</h2>
-       <p>📍 Saugerties, NY 12477</p>
-       <p>📞 <a href="tel:8452170873">845-217-0873</a></p>
-       <p>📧 <a href="mailto:Contact@BrianBensonHVAC.com">Contact@BrianBensonHVAC.com</a></p>
+<!-- GUARANTEE -->
+<section id="guarantee" style="padding:70px 5%;">
+  <div class="guarantee-inner">
+    <div class="guarantee-seal">
+      <div class="seal-icon">🛡️</div>
+      <h4>Brian Benson<br>Satisfaction<br>Promise</h4>
+    </div>
+    <div class="guarantee-text">
+      <h2>Our Work Is Guaranteed — Full Stop.</h2>
+      <p>If you're not satisfied with the work we've done, we come back and make it right. No arguing, no runaround, no fees. That's our promise — not just a policy.</p>
+      <p>We stand behind every installation, every repair, and every recommendation we make. Your comfort and your trust are non-negotiable to us.</p>
+      <div class="guarantee-points">
+        <div class="gpoint">✔ Workmanship Guaranteed</div>
+        <div class="gpoint">✔ Honest Assessments</div>
+        <div class="gpoint">✔ We Come Back If Needed</div>
+        <div class="gpoint">✔ No Pressure, Ever</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-       <!-- Social Media Links as Buttons with Logos -->
-       <div class="social-media">
-           <a href="https://www.facebook.com/profile.php?id=61572512650266" target="_blank" class="social-link">
-               <button class="social-button">
-                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/LinkedIn_Logo_2023.svg/1200px-LinkedIn_Logo_2023.svg.png" alt="Facebook" width="30" height="30">
-                   Facebook
-               </button>
-           </a>
-           <a href="https://www.instagram.com/bensonhvacllc" target="_blank" class="social-link">
-               <button class="social-button">
-                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/800px-Instagram_logo_2022.svg.png" alt="Instagram" width="30" height="30">
-                   Instagram
-               </button>
-           </a>
-           <a href="https://linkedin.com/in/brian-benson-hvac-llc" target="_blank" class="social-link">
-               <button class="social-button">
-                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/LinkedIn_in_button_2011.svg/1200px-LinkedIn_in_button_2011.svg.png" alt="LinkedIn" width="30" height="30">
-                   LinkedIn
-               </button>
-           </a>
-       </div>
+<!-- HOW IT WORKS -->
+<section id="process">
+  <div class="process-intro">
+    <div class="section-chip amber-chip">Simple Process</div>
+    <h2 class="section-heading">Getting Started is Easy</h2>
+    <p>Four simple steps from first call to complete comfort.</p>
+  </div>
+  <div class="process-grid">
+    <div class="process-step"><div class="step-circle">📞</div><h4>Call or Text</h4><p>Reach out anytime — we respond fast. Tell us what's going on and we'll get you on the schedule.</p></div>
+    <div class="process-step"><div class="step-circle">🔍</div><h4>Free Assessment</h4><p>Brian comes out, diagnoses the issue properly, and walks you through exactly what he finds — no jargon.</p></div>
+    <div class="process-step"><div class="step-circle">📋</div><h4>Clear Quote</h4><p>You get a written quote before anything starts. Approve it, and we get to work. Simple.</p></div>
+    <div class="process-step"><div class="step-circle">✅</div><h4>Done Right</h4><p>Work completed to code, cleaned up, and followed up on. You're comfortable — that's the job.</p></div>
+  </div>
+</section>
 
-       <div id="form-container" style="text-align: center;">
-           <p>Loading contact form...</p>
-           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWX1ycY3gfqG7XQVEXEfAXDhQMfVD6spjUQBeNpm5Mi_F6Wg/viewform?embedded=true" width="100%" height="815" frameborder="0" onload="this.previousElementSibling.style.display='none';"></iframe>
-       </div>
-    </section>
+<!-- FINANCING -->
+<div class="financing-strip">
+  <div><p><strong>Flexible financing available through Synchrony Bank.</strong></p><p>Don't let budget stand between your family and year-round comfort. Ask about financing at your free estimate.</p></div>
+  <a href="https://www.synchrony.com/mmc/HY237598002?sitecode=acewel403" target="_blank" class="btn-primary">Learn About Financing →</a>
+</div>
 
-    <footer>
-        <p>&copy; 2025 Brian Benson HVAC. All rights reserved.</p>
-    </footer>
+<!-- AREA -->
+<section id="area">
+  <div class="area-wrap">
+    <div>
+      <div class="section-chip">Where We Work</div>
+      <h2 class="section-heading">Proudly Serving the Hudson Valley</h2>
+      <p style="font-size:1rem;font-weight:300;color:var(--text-mid);line-height:1.8;max-width:480px;">Based in Saugerties, NY — we serve communities throughout Ulster, Greene, and Columbia counties. If you're in the Hudson Valley, chances are we can get to you.</p>
+      <div class="area-towns">
+        <span class="town-pill primary">Saugerties ★</span>
+        <span class="town-pill">Kingston</span><span class="town-pill">Woodstock</span><span class="town-pill">Catskill</span>
+        <span class="town-pill">Rhinebeck</span><span class="town-pill">New Paltz</span><span class="town-pill">Hudson</span>
+        <span class="town-pill">Phoenicia</span><span class="town-pill">Tannersville</span><span class="town-pill">Red Hook</span>
+        <span class="town-pill">Rosendale</span><span class="town-pill">Ellenville</span><span class="town-pill">Stone Ridge</span>
+        <span class="town-pill">&amp; Surrounding Areas</span>
+      </div>
+    </div>
+    <div class="area-callout">
+      <h3>Not sure if we cover your area?</h3>
+      <p>Give us a call or shoot us a text. If we can get to you, we will. We'd rather show up and help than turn away a neighbor.</p>
+      <div class="area-contact-options">
+        <a href="tel:8452170873" class="area-contact-row"><div class="acon-icon">📞</div><div><div class="acon-label">Call or Text</div><div class="acon-value">845-217-0873</div></div></a>
+        <a href="mailto:Contact@BrianBensonHVAC.com" class="area-contact-row"><div class="acon-icon">📧</div><div><div class="acon-label">Email Us</div><div class="acon-value">Contact@BrianBensonHVAC.com</div></div></a>
+        <a href="#contact" class="area-contact-row"><div class="acon-icon">📋</div><div><div class="acon-label">Request Online</div><div class="acon-value">Free Estimate Form →</div></div></a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <a href="tel:8452170873" class="call-button">📞 Call Us</a>
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="section-chip white-chip">Real Reviews</div>
+    <h2 class="section-heading light">What Your Neighbors<br>Are <span class="amber">Saying</span></h2>
+  </div>
+  <div class="testimonials-grid">
+    <div class="tcard"><div class="tcard-qmark">"</div><div class="tcard-stars">★★★★★</div><p>Brian exceeded every expectation. He showed up on time, explained everything clearly, and the price was exactly what he quoted. I've already referred him to three neighbors.</p><div class="tcard-author"><div class="tcard-avatar">M</div><div><div class="tcard-name">Mike T.</div><div class="tcard-loc">Saugerties, NY</div></div></div></div>
+    <div class="tcard"><div class="tcard-qmark">"</div><div class="tcard-stars">★★★★★</div><p>Honest, professional, and reliable. My old HVAC company kept pushing me to replace the whole system. Brian fixed it for a fraction of the cost and it's been running great ever since.</p><div class="tcard-author"><div class="tcard-avatar">S</div><div><div class="tcard-name">Sarah L.</div><div class="tcard-loc">Kingston, NY</div></div></div></div>
+    <div class="tcard"><div class="tcard-qmark">"</div><div class="tcard-stars">★★★★★</div><p>Called at 11pm with no heat in January. Brian answered, was at my house within the hour, and had it fixed before midnight. That's the kind of service you just don't find anymore.</p><div class="tcard-author"><div class="tcard-avatar">D</div><div><div class="tcard-name">Dave R.</div><div class="tcard-loc">Woodstock, NY</div></div></div></div>
+    <div class="tcard"><div class="tcard-qmark">"</div><div class="tcard-stars">★★★★★</div><p>I've used a lot of HVAC companies over the years. Brian is the only one I trust completely. He's upfront, fair, and genuinely cares about doing a good job. Highly recommend.</p><div class="tcard-author"><div class="tcard-avatar">J</div><div><div class="tcard-name">Jennifer K.</div><div class="tcard-loc">Rhinebeck, NY</div></div></div></div>
+    <div class="tcard"><div class="tcard-qmark">"</div><div class="tcard-stars">★★★★★</div><p>Brian installed a new mini-split for us and the whole process was seamless. Clean work, no mess left behind, and he walked us through everything before he left.</p><div class="tcard-author"><div class="tcard-avatar">C</div><div><div class="tcard-name">Chris &amp; Amy N.</div><div class="tcard-loc">New Paltz, NY</div></div></div></div>
+    <div class="tcard"><div class="tcard-qmark">"</div><div class="tcard-stars">★★★★★</div><p>Best HVAC experience I've had in 20 years as a homeowner. No nonsense, fair pricing, great work. Brian is the only person I'm calling from now on.</p><div class="tcard-author"><div class="tcard-avatar">R</div><div><div class="tcard-name">Robert M.</div><div class="tcard-loc">Catskill, NY</div></div></div></div>
+  </div>
+  <div class="reviews-link"><a href="https://www.facebook.com/profile.php?id=61572512650266" target="_blank">⭐ Leave Us a Review on Facebook →</a></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-wrap">
+    <div class="contact-left">
+      <div class="section-chip white-chip">Get In Touch</div>
+      <h2 class="section-heading light">Let's Get Your<br><span class="amber">Comfort</span> Sorted.</h2>
+      <p>Whether it's an emergency, a quote, or just a question — reach out. We respond fast, we're easy to talk to, and there's never any pressure.</p>
+      <div class="contact-items">
+        <div class="citem"><div class="citem-icon">📍</div><div><div class="citem-label">Location</div><p>Saugerties, NY 12477</p></div></div>
+        <div class="citem"><div class="citem-icon">📞</div><div><div class="citem-label">Phone / Text</div><a href="tel:8452170873">845-217-0873</a></div></div>
+        <div class="citem"><div class="citem-icon">📧</div><div><div class="citem-label">Email</div><a href="mailto:Contact@BrianBensonHVAC.com">Contact@BrianBensonHVAC.com</a></div></div>
+        <div class="citem"><div class="citem-icon">🕐</div><div><div class="citem-label">Hours</div><p>Mon–Fri: 7am–6pm · Sat: 8am–2pm<br/>Emergency service available 24/7</p></div></div>
+      </div>
+      <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=61572512650266" target="_blank" class="slink">Facebook</a>
+        <a href="https://www.instagram.com/bensonhvacllc" target="_blank" class="slink">Instagram</a>
+        <a href="https://linkedin.com/in/brian-benson-hvac-llc" target="_blank" class="slink">LinkedIn</a>
+      </div>
+    </div>
+    <div class="contact-form-wrap">
+      <div class="form-header">Request a Free Estimate</div>
+      <div class="form-subheader">We'll get back to you within a few hours — usually much faster.</div>
+      <div class="form-grid">
+        <div class="fgroup"><label>First Name</label><input type="text" id="fname" placeholder="John"/></div>
+        <div class="fgroup"><label>Last Name</label><input type="text" id="lname" placeholder="Smith"/></div>
+        <div class="fgroup"><label>Phone / Text</label><input type="tel" id="fphone" placeholder="(845) 000-0000"/></div>
+        <div class="fgroup"><label>Email</label><input type="email" id="femail" placeholder="you@email.com"/></div>
+        <div class="fgroup full"><label>Your Town</label><input type="text" id="ftown" placeholder="e.g. Woodstock, Kingston, Rhinebeck..."/></div>
+        <div class="fgroup full"><label>Service Needed</label>
+          <select id="fservice">
+            <option value="">Select a service...</option>
+            <option>New HVAC Installation</option><option>Repair / Not Working</option>
+            <option>Maintenance / Tune-Up</option><option>Air Quality Solutions</option>
+            <option>Emergency Service – Call Me Now</option><option>Financing Information</option>
+            <option>General Question</option>
+          </select>
+        </div>
+        <div class="fgroup full"><label>Tell Us What's Going On</label><textarea id="fmsg" placeholder="Describe your situation — the more detail, the better we can help..."></textarea></div>
+        <div class="fgroup full">
+          <button class="form-submit" onclick="submitForm()">Send My Request — It's Free →</button>
+          <div class="form-note">🔒 No spam. No pressure. Just a fast, friendly response from Brian.</div>
+          <div class="form-success" id="formSuccess">✔ Got it! Brian will be in touch shortly. For urgent issues, call <a href="tel:8452170873" style="color:var(--amber);">845-217-0873</a> directly.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-logo"><img src="https://www.brianbensonhvac.com/websitelogo.png" alt="Brian Benson HVAC LLC"/></div>
+    <ul class="footer-links">
+      <li><a href="#about">About</a></li><li><a href="#services">Services</a></li>
+      <li><a href="#area">Service Area</a></li><li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="tel:8452170873" class="btn-primary" style="font-size:.9rem;padding:.8rem 1.6rem;">📞 845-217-0873</a>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Brian Benson HVAC LLC · Saugerties, NY · All rights reserved.</p>
+    <p>Licensed &amp; Insured · <span class="amber-txt">Your Comfort Is Our Commitment</span></p>
+  </div>
+</footer>
+
+<a href="tel:8452170873" class="float-call">📞 Call Now</a>
+
+<script>
+  function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+
+  function submitForm(){
+    const name=document.getElementById('fname').value.trim();
+    const phone=document.getElementById('fphone').value.trim();
+    const email=document.getElementById('femail').value.trim();
+    if(!name||(!phone&&!email)){alert('Please enter your name and at least a phone number or email so we can reach you.');return;}
+    document.getElementById('formSuccess').style.display='block';
+    document.querySelector('.form-submit').style.display='none';
+    // TO CONNECT: fetch('https://formspree.io/f/YOUR_ID',{method:'POST',body:new FormData(document.querySelector('.form-grid'))})
+  }
+
+  // Scroll nav highlight
+  const allSec=document.querySelectorAll('section[id]');
+  const allNav=document.querySelectorAll('.nav-links a[href^="#"]');
+  window.addEventListener('scroll',()=>{
+    let cur='';
+    allSec.forEach(s=>{if(window.scrollY>=s.offsetTop-120)cur=s.id;});
+    allNav.forEach(a=>{a.style.color=a.getAttribute('href')==='#'+cur?'var(--amber)':'';});
+  });
+
+  // Scroll fade-in
+  const obs=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';}});
+  },{threshold:0.1});
+  document.querySelectorAll('.svc-card,.why-card,.tcard,.process-step,.mini-stat,.trust-card').forEach(el=>{
+    el.style.opacity='0';el.style.transform='translateY(20px)';
+    el.style.transition='opacity 0.5s ease, transform 0.5s ease';
+    obs.observe(el);
+  });
+</script>
 </body>
 </html>
