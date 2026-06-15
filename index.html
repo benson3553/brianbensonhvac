@@ -3,31 +3,212 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Brian Benson HVAC LLC | Your Comfort Is Our Commitment – Saugerties, NY</title>
-  <meta name="description" content="Brian Benson HVAC LLC – licensed, insured, and trusted by Hudson Valley homeowners. 24/7 emergency service. Free estimates. Saugerties, Kingston, Woodstock & beyond."/>
+
+  <!-- ═══════════════════════════════════════════
+       SEO: PAGE TITLE & META
+  ═══════════════════════════════════════════ -->
+  <title>Brian Benson HVAC LLC | Heating & Cooling – Saugerties, Rhinebeck, Woodstock, Hudson NY</title>
+  <meta name="description" content="Brian Benson HVAC LLC – licensed HVAC installation, repair & 24/7 emergency service in Saugerties, Rhinebeck, Woodstock, Kingston & the Hudson Valley. Mitsubishi, Rinnai, Navien. Call 845-217-0873."/>
+  <meta name="keywords" content="HVAC Saugerties NY, HVAC Rhinebeck NY, boiler installation Hudson Valley NY, Viessmann Vitocrossal installer Hudson Valley, Viessmann boiler installer Hudson Valley, Buderus boiler Hudson Valley, radiant heating Hudson Valley, hydronic boiler replacement NY, boiler specialist Saugerties, HVAC Woodstock NY, mini split installation Hudson Valley, Mitsubishi mini split installer NY, Rinnai tankless water heater Hudson Valley, heat pump installation Hudson Valley, 24 hour emergency HVAC Hudson Valley, boiler repair Kingston NY, HVAC contractor Ulster County"/>
+  <link rel="canonical" href="https://www.brianbensonhvac.com"/>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Brian Benson HVAC LLC | Hudson Valley Heating & Cooling"/>
+  <meta property="og:description" content="Trusted HVAC contractor serving Saugerties, Rhinebeck, Woodstock, Hudson & the Hudson Valley. Quality work, honest pricing, 24/7 emergency service. Call 845-217-0873."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://www.brianbensonhvac.com"/>
+  <meta property="og:image" content="https://www.brianbensonhvac.com/websitelogo.png"/>
+
+  <!-- ═══════════════════════════════════════════
+       GOOGLE SEARCH CONSOLE VERIFICATION
+  ═══════════════════════════════════════════ -->
+  <meta name="google-site-verification" content="9zKVoJ6sV1kVx7pg8Ipet3oBMmNJpRSFJzqhi6qsbvI"/>
+
+  <!-- ═══════════════════════════════════════════
+       GOOGLE ANALYTICS 4 — G-LC5S3TMY7E
+       Tracks: page views, traffic sources, phone
+       clicks, form submissions, QR code visits
+  ═══════════════════════════════════════════ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LC5S3TMY7E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LC5S3TMY7E', {
+      page_title: document.title,
+      page_location: window.location.href
+    });
+
+    // Track phone number clicks
+    function trackPhone(source) {
+      gtag('event', 'phone_call', {
+        event_category: 'Lead',
+        event_label: source || 'general',
+        value: 1
+      });
+    }
+
+    // Track form submissions
+    function trackFormSubmit() {
+      gtag('event', 'form_submit', {
+        event_category: 'Lead',
+        event_label: 'contact_form',
+        value: 1
+      });
+    }
+
+    // Track QR code visits (business cards & stickers)
+    function trackQR(source) {
+      gtag('event', 'qr_scan', {
+        event_category: 'Traffic Source',
+        event_label: source || 'unknown',
+        value: 1
+      });
+    }
+
+    // Auto-detect QR traffic from URL params
+    window.addEventListener('load', function() {
+      const params = new URLSearchParams(window.location.search);
+      const utmSource = params.get('utm_source');
+      const utmMedium = params.get('utm_medium');
+      if (utmSource === 'business_card' || utmMedium === 'qr') {
+        trackQR('business_card');
+      }
+      if (utmSource === 'service_sticker' || utmSource === 'unit_sticker') {
+        trackQR('unit_sticker');
+      }
+    });
+  </script>
+
+  <!-- ═══════════════════════════════════════════
+       LOCAL BUSINESS SCHEMA — For Google & AI
+       (ChatGPT, Perplexity, Claude use this)
+  ═══════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HVACBusiness",
+    "name": "Brian Benson HVAC LLC",
+    "image": "https://www.brianbensonhvac.com/websitelogo.png",
+    "url": "https://www.brianbensonhvac.com",
+    "telephone": "+18452170873",
+    "email": "Contact@BrianBensonHVAC.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "149 Barclay Ln",
+      "addressLocality": "Saugerties",
+      "addressRegion": "NY",
+      "postalCode": "12477",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 42.0522254,
+      "longitude": -73.9620518
+    },
+    "openingHoursSpecification": [
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"14:00"}
+    ],
+    "areaServed": [
+      "Saugerties NY","Rhinebeck NY","Woodstock NY","Hudson NY","Kingston NY",
+      "Catskill NY","Tivoli NY","Germantown NY","Accord NY","Stone Ridge NY",
+      "Phoenicia NY","New Paltz NY","Red Hook NY","Tannersville NY","Ellenville NY",
+      "Rosendale NY","Cold Spring NY"
+    ],
+    "priceRange": "$$",
+    "description": "Brian Benson HVAC LLC is a licensed and insured HVAC contractor serving the Hudson Valley, NY. Specializing in Mitsubishi mini-split installation, Rinnai tankless water heaters, boiler replacement, heat pumps, air quality solutions, and 24/7 emergency HVAC repair.",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "HVAC Services",
+      "itemListElement": [
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"HVAC Installation","description":"High-efficiency heating and cooling system installation including mini-splits, heat pumps, and central air systems."}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"HVAC Repair","description":"Same-day HVAC repair and diagnostics for all makes and models throughout the Hudson Valley."}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Boiler Replacement","description":"Viessmann and Buderus premium boiler installation and replacement throughout the Hudson Valley, NY. Multi-zone radiant heating systems and hydronic upgrades."}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Mitsubishi Mini-Split Installation","description":"Authorized Mitsubishi Electric ductless mini-split installation and service in the Hudson Valley."}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Rinnai Tankless Water Heater","description":"Rinnai tankless water heater installation and service throughout Ulster, Greene and Columbia counties."}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"24/7 Emergency HVAC Service","description":"Round-the-clock emergency heating and cooling repair serving the Hudson Valley."}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Indoor Air Quality","description":"Whole-home air filtration, UV purification, dehumidifiers and ventilation systems."}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"HVAC Maintenance","description":"Seasonal tune-ups and preventive maintenance for heating and cooling systems."}}
+      ]
+    },
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61572512650266",
+      "https://www.instagram.com/bensonhvacllc",
+      "https://linkedin.com/in/brian-benson-hvac-llc"
+    ]
+  }
+  </script>
+
+  <!-- FAQ Schema — AI search engines pull from this heavily -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Who is the best HVAC contractor in Saugerties NY?",
+        "acceptedAnswer": {"@type":"Answer","text":"Brian Benson HVAC LLC is a top-rated HVAC contractor based in Saugerties, NY. Licensed, insured, and serving the Hudson Valley with expert installation, repair, and 24/7 emergency service."}
+      },
+      {
+        "@type": "Question",
+        "name": "Does Brian Benson HVAC serve Rhinebeck and Woodstock NY?",
+        "acceptedAnswer": {"@type":"Answer","text":"Yes. Brian Benson HVAC LLC serves Rhinebeck, Woodstock, Hudson, Kingston, Catskill, Tivoli, Germantown, Accord, Stone Ridge, Phoenicia, New Paltz, and surrounding Hudson Valley communities."}
+      },
+      {
+        "@type": "Question",
+        "name": "Does Brian Benson HVAC install Mitsubishi mini-splits?",
+        "acceptedAnswer": {"@type":"Answer","text":"Yes. Brian Benson HVAC LLC installs and services Mitsubishi Electric ductless mini-split systems throughout the Hudson Valley, NY."}
+      },
+      {
+        "@type": "Question",
+        "name": "Does Brian Benson HVAC offer 24/7 emergency service?",
+        "acceptedAnswer": {"@type":"Answer","text":"Yes. Brian Benson HVAC LLC provides true 24/7 emergency heating and cooling service throughout the Hudson Valley. Call 845-217-0873 anytime."}
+      },
+      {
+        "@type": "Question",
+        "name": "How much does HVAC installation cost in the Hudson Valley?",
+        "acceptedAnswer": {"@type":"Answer","text":"Brian Benson HVAC LLC provides free written estimates before any work begins. Pricing depends on the system type and home size. Call 845-217-0873 or submit a request online for a free estimate."}
+      },
+      {
+        "@type": "Question",
+        "name": "Does Brian Benson HVAC install Rinnai tankless water heaters?",
+        "acceptedAnswer": {"@type":"Answer","text":"Yes. Brian Benson HVAC LLC installs and services Rinnai and Navien tankless water heater systems throughout Ulster, Greene, and Columbia counties in the Hudson Valley."}
+      },
+      {
+        "@type": "Question",
+        "name": "Is Brian Benson HVAC licensed and insured in New York?",
+        "acceptedAnswer": {"@type":"Answer","text":"Yes. Brian Benson HVAC LLC is fully licensed in New York State, EPA 608 certified, and fully insured. Every job is backed by proper insurance for your protection."}
+      },
+      {
+        "@type": "Question",
+        "name": "What areas does Brian Benson HVAC serve?",
+        "acceptedAnswer": {"@type":"Answer","text":"Brian Benson HVAC LLC serves Saugerties, Rhinebeck, Woodstock, Hudson, Kingston, Catskill, Tivoli, Germantown, Accord, Stone Ridge, Phoenicia, New Paltz, Red Hook, Tannersville, Ellenville, Rosendale, Cold Spring and surrounding Hudson Valley communities."}
+      }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet"/>
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-    :root {
-      --teal-darkest:#051a1b; --teal-dark:#082628; --teal-mid:#0a3235;
-      --teal:#0d4245; --teal-light:#1a6166; --teal-bright:#2a8f96;
-      --amber:#f5a623; --amber-light:#f7be5e; --amber-dark:#d4860a;
-      --white:#ffffff; --off-white:#f0f9f9; --light-teal:#e4f4f5;
-      --text-dark:#0d2e30; --text-mid:#2d5a5d; --text-muted:#6a9ea2;
+    :root{
+      --teal-darkest:#051a1b;--teal-dark:#082628;--teal-mid:#0a3235;
+      --teal:#0d4245;--teal-light:#1a6166;--teal-bright:#2a8f96;
+      --amber:#f5a623;--amber-light:#f7be5e;--amber-dark:#d4860a;
+      --white:#ffffff;--off-white:#f0f9f9;--light-teal:#e4f4f5;
+      --text-dark:#0d2e30;--text-mid:#2d5a5d;--text-muted:#6a9ea2;
       --red-urgent:#e8402a;
     }
     html{scroll-behavior:smooth;}
     body{font-family:'Source Serif 4',Georgia,serif;background:var(--off-white);color:var(--text-dark);overflow-x:hidden;}
-
-    /* ANNOUNCE */
     .announce-bar{background:var(--amber);padding:.55rem 5%;text-align:center;font-family:'Oswald',sans-serif;font-size:.88rem;font-weight:500;letter-spacing:1.5px;color:var(--teal-darkest);display:flex;align-items:center;justify-content:center;gap:1.5rem;flex-wrap:wrap;}
     .announce-bar a{color:var(--teal-darkest);font-weight:700;text-decoration:underline;}
     .pulse-dot{width:8px;height:8px;background:var(--red-urgent);border-radius:50%;display:inline-block;animation:pulseDot 1.5s infinite;flex-shrink:0;}
     @keyframes pulseDot{0%,100%{transform:scale(1);opacity:1;}50%{transform:scale(1.4);opacity:.7;}}
-
-    /* NAV */
     nav{position:sticky;top:0;z-index:1000;background:rgba(5,26,27,.97);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:72px;border-bottom:2px solid var(--amber);}
     .nav-logo img{height:52px;width:auto;display:block;}
     .nav-links{display:flex;gap:.25rem;list-style:none;align-items:center;}
@@ -42,8 +223,6 @@
     .mobile-menu.open{display:flex;}
     .mobile-menu a{color:rgba(255,255,255,.7);text-decoration:none;font-family:'Oswald',sans-serif;font-size:1.1rem;letter-spacing:2px;text-transform:uppercase;padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.06);}
     .mobile-menu a:last-child{border-bottom:none;color:var(--amber);font-weight:700;}
-
-    /* HERO */
     #home{min-height:100vh;background:linear-gradient(160deg,var(--teal-darkest) 0%,var(--teal-mid) 60%,var(--teal) 100%);display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:80px 5% 60px;position:relative;overflow:hidden;gap:4rem;}
     .hero-hex{position:absolute;inset:0;overflow:hidden;pointer-events:none;}
     .hero-hex svg{width:100%;height:100%;opacity:.06;}
@@ -67,28 +246,20 @@
     .hero-phone-block a:hover{color:var(--amber);}
     .hero-phone-block p{font-size:.75rem;color:var(--text-muted);letter-spacing:2px;text-transform:uppercase;margin-top:.3rem;}
     .hero-right{position:relative;z-index:2;display:flex;flex-direction:column;gap:1rem;}
-    .trust-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-left:4px solid var(--amber);border-radius:6px;padding:1.4rem 1.6rem;display:flex;align-items:flex-start;gap:1rem;backdrop-filter:blur(6px);transition:background .25s,transform .25s;animation:fadeUp .7s ease both;}
-    .trust-card:nth-child(1){animation-delay:.15s;} .trust-card:nth-child(2){animation-delay:.25s;} .trust-card:nth-child(3){animation-delay:.35s;} .trust-card:nth-child(4){animation-delay:.45s;} .trust-card:nth-child(5){animation-delay:.55s;}
+    .trust-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-left:4px solid var(--amber);border-radius:6px;padding:1.4rem 1.6rem;display:flex;align-items:flex-start;gap:1rem;backdrop-filter:blur(6px);transition:background .25s;}
     .trust-card:hover{background:rgba(255,255,255,.09);transform:translateX(4px);}
     .trust-card-icon{font-size:1.8rem;flex-shrink:0;margin-top:2px;}
     .trust-card h4{font-family:'Oswald',sans-serif;font-size:1rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--white);margin-bottom:.3rem;}
     .trust-card p{font-size:.88rem;font-weight:300;color:rgba(255,255,255,.55);line-height:1.5;}
-
-    /* PROOF BAR */
     .proof-bar{background:var(--amber);padding:1.1rem 5%;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:2.5rem;}
     .proof-item{display:flex;align-items:center;gap:.6rem;font-family:'Oswald',sans-serif;font-size:.88rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--teal-darkest);}
-
-    /* SECTIONS */
     section{padding:100px 5%;}
     .section-chip{display:inline-block;background:var(--light-teal);color:var(--teal-light);font-family:'Oswald',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:4px;text-transform:uppercase;padding:.4rem 1rem;border-radius:2px;margin-bottom:1rem;}
     .section-chip.amber-chip{background:rgba(245,166,35,.12);color:var(--amber-dark);}
     .section-chip.white-chip{background:rgba(255,255,255,.1);color:rgba(255,255,255,.6);}
     .section-heading{font-family:'Oswald',sans-serif;font-size:clamp(2.2rem,4vw,3.5rem);font-weight:700;text-transform:uppercase;letter-spacing:1px;line-height:1.05;color:var(--teal-darkest);margin-bottom:1.5rem;}
     .section-heading.light{color:var(--white);}
-    .section-heading em{font-style:normal;color:var(--teal-bright);font-weight:300;}
     .section-heading .amber{color:var(--amber);}
-
-    /* ABOUT */
     #about{background:var(--white);}
     .about-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:6rem;align-items:center;max-width:1200px;margin:0 auto;}
     .about-photo-block{position:relative;}
@@ -111,8 +282,6 @@
     .mini-stat{text-align:center;background:var(--light-teal);border-radius:8px;padding:1.2rem 1rem;}
     .mini-stat .num{font-family:'Oswald',sans-serif;font-size:2rem;font-weight:700;color:var(--teal-dark);line-height:1;}
     .mini-stat p{font-size:.72rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);margin-top:.3rem;}
-
-    /* WHY */
     #why{background:var(--teal-dark);}
     .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:3.5rem;max-width:1200px;margin-left:auto;margin-right:auto;}
     .why-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:8px;padding:2.5rem 2rem;position:relative;overflow:hidden;transition:transform .3s,border-color .3s,background .3s;}
@@ -124,8 +293,6 @@
     .why-card h3{font-family:'Oswald',sans-serif;font-size:1.3rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--white);margin-bottom:.8rem;}
     .why-card p{font-size:.95rem;font-weight:300;color:rgba(255,255,255,.55);line-height:1.75;}
     .why-card .highlight{display:inline-block;margin-top:1rem;color:var(--amber);font-family:'Oswald',sans-serif;font-size:.82rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;}
-
-    /* SERVICES */
     #services{background:var(--off-white);}
     .services-intro{max-width:1200px;margin:0 auto 4rem;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:end;}
     .services-intro p{font-size:1rem;font-weight:300;line-height:1.8;color:var(--text-mid);}
@@ -140,8 +307,6 @@
     .svc-features{list-style:none;margin-top:1.2rem;display:flex;flex-direction:column;gap:.5rem;}
     .svc-features li{font-size:.88rem;color:var(--text-mid);display:flex;align-items:center;gap:.5rem;}
     .svc-features li::before{content:'✓';color:var(--amber-dark);font-weight:700;flex-shrink:0;}
-
-    /* GUARANTEE */
     #guarantee{background:var(--amber);padding:70px 5%;}
     .guarantee-inner{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:auto 1fr;gap:4rem;align-items:center;}
     .guarantee-seal{width:180px;height:180px;flex-shrink:0;background:var(--teal-darkest);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:1.5rem;box-shadow:0 15px 50px rgba(8,38,40,.35);border:4px solid rgba(255,255,255,.15);}
@@ -151,8 +316,6 @@
     .guarantee-text p{font-size:1.05rem;line-height:1.8;color:rgba(8,38,40,.75);margin-bottom:.75rem;}
     .guarantee-points{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem;}
     .gpoint{background:rgba(8,38,40,.1);color:var(--teal-darkest);font-family:'Oswald',sans-serif;font-size:.8rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:.5rem 1rem;border-radius:4px;}
-
-    /* PROCESS */
     #process{background:var(--white);}
     .process-intro{text-align:center;margin-bottom:4rem;}
     .process-intro p{color:var(--text-mid);font-weight:300;font-size:1rem;max-width:500px;margin:.75rem auto 0;}
@@ -162,8 +325,9 @@
     .step-circle{width:72px;height:72px;background:var(--teal-darkest);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:1.6rem;border:3px solid var(--amber);position:relative;z-index:1;box-shadow:0 4px 20px rgba(8,38,40,.2);}
     .process-step h4{font-family:'Oswald',sans-serif;font-size:1rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--teal-darkest);margin-bottom:.5rem;}
     .process-step p{font-size:.88rem;font-weight:300;color:var(--text-mid);line-height:1.6;}
-
-    /* AREA */
+    .financing-strip{background:var(--teal-mid);padding:2.5rem 5%;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);}
+    .financing-strip p{color:rgba(255,255,255,.6);font-weight:300;}
+    .financing-strip strong{color:var(--white);}
     #area{background:var(--off-white);}
     .area-wrap{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
     .area-towns{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:2rem;}
@@ -179,8 +343,25 @@
     .acon-icon{width:42px;height:42px;flex-shrink:0;background:var(--amber);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;}
     .acon-label{font-family:'Oswald',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--text-muted);}
     .acon-value{font-family:'Oswald',sans-serif;font-size:1.1rem;font-weight:600;color:var(--white);letter-spacing:1px;}
-
-    /* TESTIMONIALS */
+    #gallery{background:var(--white);padding:110px 5%;}
+    .gallery-intro{max-width:1200px;margin:0 auto 3rem;}
+    .gallery-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+    .gallery-item{position:relative;overflow:hidden;aspect-ratio:4/3;cursor:pointer;background:var(--teal-dark);}
+    .gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease;display:block;}
+    .gallery-item:hover img{transform:scale(1.06);}
+    .gallery-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(5,26,27,.85) 0%,transparent 55%);opacity:0;transition:opacity .3s;display:flex;align-items:flex-end;padding:1.2rem;}
+    .gallery-item:hover .gallery-overlay{opacity:1;}
+    .gallery-label{font-family:'Oswald',sans-serif;font-size:.88rem;font-weight:400;letter-spacing:2px;text-transform:uppercase;color:var(--white);display:flex;align-items:center;gap:.5rem;}
+    .gallery-label::before{content:'';display:inline-block;width:8px;height:8px;background:var(--amber);border-radius:50%;}
+    .lightbox{display:none;position:fixed;inset:0;z-index:9999;background:rgba(5,26,27,.96);align-items:center;justify-content:center;padding:2rem;}
+    .lightbox.open{display:flex;}
+    .lightbox img{max-width:90vw;max-height:85vh;object-fit:contain;border-radius:6px;}
+    .lightbox-close{position:fixed;top:1.5rem;right:1.5rem;width:44px;height:44px;background:var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;cursor:pointer;color:var(--teal-darkest);font-weight:700;border:none;z-index:10000;}
+    .lightbox-caption{position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);background:rgba(5,26,27,.9);border:1px solid rgba(245,166,35,.3);color:var(--white);font-family:'Oswald',sans-serif;font-size:.88rem;letter-spacing:2px;text-transform:uppercase;padding:.6rem 1.5rem;border-radius:30px;white-space:nowrap;}
+    .lightbox-nav{position:fixed;top:50%;transform:translateY(-50%);background:rgba(245,166,35,.15);border:1px solid rgba(245,166,35,.3);color:var(--amber);font-size:1.5rem;width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .2s;z-index:10000;}
+    .lightbox-nav:hover{background:var(--amber);color:var(--teal-darkest);}
+    .lightbox-prev{left:1rem;}
+    .lightbox-next{right:1rem;}
     #testimonials{background:var(--teal-darkest);}
     .testimonials-grid{max-width:1200px;margin:3.5rem auto 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;}
     .tcard{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:2.5rem;position:relative;transition:transform .3s,border-color .3s;}
@@ -193,15 +374,18 @@
     .tcard-name{font-family:'Oswald',sans-serif;font-size:.9rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--white);}
     .tcard-loc{font-size:.78rem;color:var(--text-muted);margin-top:.2rem;}
     .reviews-link{text-align:center;margin-top:3rem;}
-    .reviews-link a{display:inline-flex;align-items:center;gap:.6rem;color:var(--amber);font-family:'Oswald',sans-serif;font-size:.9rem;font-weight:500;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(245,166,35,.3);padding-bottom:2px;transition:border-color .2s;}
-    .reviews-link a:hover{border-color:var(--amber);}
-
-    /* FINANCING STRIP */
-    .financing-strip{background:var(--teal-mid);padding:2.5rem 5%;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);}
-    .financing-strip p{color:rgba(255,255,255,.6);font-weight:300;}
-    .financing-strip strong{color:var(--white);}
-
-    /* CONTACT */
+    .reviews-link a{display:inline-flex;align-items:center;gap:.6rem;color:var(--amber);font-family:'Oswald',sans-serif;font-size:.9rem;font-weight:500;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(245,166,35,.3);padding-bottom:2px;}
+    /* FAQ SECTION */
+    #faq{background:var(--white);padding:100px 5%;}
+    .faq-grid{max-width:900px;margin:3rem auto 0;display:flex;flex-direction:column;gap:1rem;}
+    .faq-item{border:1px solid rgba(10,50,53,.1);border-radius:8px;overflow:hidden;}
+    .faq-question{width:100%;background:none;border:none;padding:1.4rem 1.8rem;text-align:left;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:1rem;font-family:'Oswald',sans-serif;font-size:1rem;font-weight:500;letter-spacing:.5px;text-transform:uppercase;color:var(--teal-darkest);transition:background .2s;}
+    .faq-question:hover{background:var(--light-teal);}
+    .faq-question.open{background:var(--teal-darkest);color:var(--white);}
+    .faq-icon{font-size:1.2rem;flex-shrink:0;transition:transform .3s;color:var(--amber);}
+    .faq-question.open .faq-icon{transform:rotate(45deg);}
+    .faq-answer{display:none;padding:1.2rem 1.8rem 1.5rem;font-size:1rem;font-weight:300;line-height:1.8;color:var(--text-mid);background:var(--light-teal);border-top:1px solid rgba(10,50,53,.08);}
+    .faq-answer.open{display:block;}
     #contact{background:var(--teal-dark);}
     .contact-wrap{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1.2fr;gap:6rem;}
     .contact-left>p{font-size:1.05rem;font-weight:300;line-height:1.85;color:rgba(255,255,255,.55);margin-bottom:3rem;}
@@ -219,19 +403,17 @@
     .form-subheader{font-size:.88rem;font-weight:300;color:rgba(255,255,255,.4);margin-bottom:2rem;}
     .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
     .fgroup{display:flex;flex-direction:column;gap:.4rem;}
-    .fgroup.full{grid-column:1 / -1;}
+    .fgroup.full{grid-column:1/-1;}
     .fgroup label{font-family:'Oswald',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.4);}
-    .fgroup input,.fgroup select,.fgroup textarea{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:var(--white);font-family:'Source Serif 4',serif;font-size:.97rem;font-weight:300;padding:.85rem 1rem;border-radius:6px;outline:none;transition:border-color .2s,background .2s;width:100%;}
+    .fgroup input,.fgroup select,.fgroup textarea{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:var(--white);font-family:'Source Serif 4',serif;font-size:.97rem;font-weight:300;padding:.85rem 1rem;border-radius:6px;outline:none;transition:border-color .2s;width:100%;}
     .fgroup input::placeholder,.fgroup textarea::placeholder{color:rgba(255,255,255,.2);}
-    .fgroup input:focus,.fgroup select:focus,.fgroup textarea:focus{border-color:var(--amber);background:rgba(255,255,255,.09);}
+    .fgroup input:focus,.fgroup select:focus,.fgroup textarea:focus{border-color:var(--amber);}
     .fgroup select option{background:var(--teal-dark);color:var(--white);}
     .fgroup textarea{resize:vertical;min-height:110px;}
     .form-submit{width:100%;margin-top:1rem;background:var(--amber);color:var(--teal-darkest);font-family:'Oswald',sans-serif;font-weight:700;font-size:1rem;letter-spacing:2.5px;text-transform:uppercase;padding:1.1rem;border:none;border-radius:6px;cursor:pointer;transition:background .2s,transform .15s,box-shadow .2s;box-shadow:0 4px 20px rgba(245,166,35,.3);}
     .form-submit:hover{background:var(--amber-light);transform:translateY(-2px);box-shadow:0 8px 30px rgba(245,166,35,.45);}
     .form-note{font-size:.78rem;color:rgba(255,255,255,.3);text-align:center;margin-top:.75rem;}
     .form-success{display:none;background:rgba(245,166,35,.1);border:1px solid var(--amber);color:var(--amber);font-family:'Oswald',sans-serif;font-size:1rem;font-weight:500;letter-spacing:1px;text-align:center;padding:1.5rem;border-radius:8px;margin-top:1rem;}
-
-    /* FOOTER */
     footer{background:var(--teal-darkest);padding:3rem 5% 1.5rem;border-top:1px solid rgba(255,255,255,.06);}
     .footer-top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:2rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,.06);margin-bottom:1.5rem;}
     .footer-logo img{height:60px;width:auto;}
@@ -241,91 +423,61 @@
     .footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;}
     .footer-bottom p{color:rgba(255,255,255,.25);font-size:.82rem;}
     .amber-txt{color:var(--amber);}
-
-    /* FLOAT */
     .float-call{position:fixed;bottom:2rem;right:2rem;z-index:500;background:var(--amber);color:var(--teal-darkest);font-family:'Oswald',sans-serif;font-weight:700;font-size:.9rem;letter-spacing:1.5px;text-transform:uppercase;padding:.9rem 1.8rem;border-radius:50px;text-decoration:none;display:flex;align-items:center;gap:.5rem;transition:transform .2s,box-shadow .2s;animation:floatPulse 2.5s infinite;}
     .float-call:hover{transform:translateY(-3px);}
     @keyframes floatPulse{0%,100%{box-shadow:0 8px 30px rgba(245,166,35,.45);}50%{box-shadow:0 8px 50px rgba(245,166,35,.7);}}
     @keyframes fadeUp{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
-
-    /* RESPONSIVE */
-    @media(max-width:1024px){
-      #home{grid-template-columns:1fr;padding-top:100px;}
-      .hero-right{display:none;}
-      .about-grid,.area-wrap,.contact-wrap,.services-intro{grid-template-columns:1fr;gap:3rem;}
-      .guarantee-inner{grid-template-columns:1fr;text-align:center;}
-      .guarantee-seal{margin:0 auto;}
-      .process-grid{grid-template-columns:repeat(2,1fr);}
-      .process-grid::before{display:none;}
-    }
-    @media(max-width:768px){
-      .nav-links{display:none;}
-      .hamburger{display:flex;}
-      .process-grid{grid-template-columns:1fr;}
-      .form-grid{grid-template-columns:1fr;}
-      .footer-top{flex-direction:column;align-items:flex-start;}
-      section{padding:60px 5%;}
-    }
-    @media(max-width:500px){
-      .about-badge{left:0;bottom:-20px;}
-      .about-stats-row{grid-template-columns:1fr 1fr;}
-      .contact-form-wrap{padding:2rem 1.5rem;}
-      .guarantee-inner{gap:2rem;}
-    }
+    @media(max-width:1024px){#home{grid-template-columns:1fr;padding-top:100px;}.hero-right{display:none;}.about-grid,.area-wrap,.contact-wrap,.services-intro{grid-template-columns:1fr;gap:3rem;}.guarantee-inner{grid-template-columns:1fr;text-align:center;}.guarantee-seal{margin:0 auto;}.process-grid{grid-template-columns:repeat(2,1fr);}.process-grid::before{display:none;}}
+    @media(max-width:768px){.nav-links{display:none;}.hamburger{display:flex;}section{padding:60px 5%;}.gallery-grid{grid-template-columns:repeat(2,1fr);}.form-grid{grid-template-columns:1fr;}.footer-top{flex-direction:column;align-items:flex-start;}}
+    @media(max-width:500px){.about-badge{left:0;bottom:-20px;}.about-stats-row{grid-template-columns:1fr 1fr;}.contact-form-wrap{padding:2rem 1.5rem;}.gallery-grid{grid-template-columns:1fr;}}
   </style>
 </head>
 <body>
 
-<!-- ANNOUNCEMENT BAR -->
 <div class="announce-bar">
   <span class="pulse-dot"></span>
-  <span>🔥 Now Scheduling Spring AC Tune-Ups — Book Before the Rush!</span>
-  <a href="#contact">Reserve Your Spot →</a>
+  <span>🔥 Boiler Season Approaching — Book Your Annual Service Now!</span>
+  <a href="#contact">Schedule Service →</a>
 </div>
 
-<!-- NAV -->
 <nav>
-  <a class="nav-logo" href="#home">
-    <img src="https://www.brianbensonhvac.com/websitelogo.png" alt="Brian Benson HVAC LLC"/>
-  </a>
+  <a class="nav-logo" href="#home"><img src="https://www.brianbensonhvac.com/websitelogo.png" alt="Brian Benson HVAC LLC"/></a>
   <ul class="nav-links">
     <li><a href="#about">About Brian</a></li>
     <li><a href="#why">Why Us</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#area">Service Area</a></li>
     <li><a href="#testimonials">Reviews</a></li>
-    <li><a href="tel:8452170873" class="nav-phone">📞 845-217-0873</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="tel:8452170873" class="nav-phone" onclick="trackPhone('nav')">📞 845-217-0873</a></li>
     <li><a href="#contact" class="nav-cta-btn">Free Quote</a></li>
   </ul>
   <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
 </nav>
 
-<!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
   <a href="#about" onclick="toggleMenu()">About Brian</a>
   <a href="#why" onclick="toggleMenu()">Why Us</a>
   <a href="#services" onclick="toggleMenu()">Services</a>
   <a href="#area" onclick="toggleMenu()">Service Area</a>
   <a href="#testimonials" onclick="toggleMenu()">Reviews</a>
+  <a href="#faq" onclick="toggleMenu()">FAQ</a>
   <a href="#contact" onclick="toggleMenu()">Get a Free Quote →</a>
 </div>
 
-<!-- HERO -->
 <section id="home">
   <div class="hero-hex">
     <svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-      <defs><pattern id="hex" x="0" y="0" width="80" height="92" patternUnits="userSpaceOnUse"><polygon points="40,0 80,23 80,69 40,92 0,69 0,23" fill="none" stroke="rgba(245,166,35,.5)" stroke-width="1"/></pattern></defs>
+      <defs><pattern id="hex" x="0" y="0" width="80" height="92" patternUnits="userSpaceOnUse"><polygon points="40,0 80,23 80,69 40,92 0,69 0,23" fill="none" stroke="rgba(245,166,35,.4)" stroke-width="1"/></pattern></defs>
       <rect width="1200" height="800" fill="url(#hex)"/>
     </svg>
   </div>
   <div class="hero-left">
-    <div class="hero-eyebrow">⚡ Hudson Valley's Trusted HVAC Expert</div>
-    <div class="hero-logo-wrap">
-      <img src="https://www.brianbensonhvac.com/websitelogo.png" alt="Brian Benson HVAC"/>
-    </div>
+    <div class="hero-eyebrow">⚡ Hudson Valley's Trusted HVAC & Boiler Specialist</div>
+    <div class="hero-logo-wrap"><img src="https://www.brianbensonhvac.com/websitelogo.png" alt="Brian Benson HVAC"/></div>
     <h1 class="hero-title">Brian Benson HVAC <span class="llc">LLC</span></h1>
     <p class="hero-tagline">Your Comfort Is Our Commitment</p>
-    <p class="hero-desc">Licensed. Insured. Honest. We treat your home like our own — no upselling, no surprises, just real HVAC work done right the first time.</p>
+    <p class="hero-desc">Licensed. Insured. Honest. From premium boiler systems to full HVAC installs — we treat your home like our own, with no upselling and no surprises.</p>
     <div class="hero-actions">
       <a href="#contact" class="btn-primary">🗓 Get a Free Estimate</a>
       <a href="#why" class="btn-ghost">Why Choose Brian?</a>
@@ -333,7 +485,7 @@
     <div class="hero-phone-block">
       <div class="hero-phone-icon">📞</div>
       <div>
-        <a href="tel:8452170873">845-217-0873</a>
+        <a href="tel:8452170873" onclick="trackPhone('hero')">845-217-0873</a>
         <p>24/7 Emergency Line &nbsp;·&nbsp; Call or Text Anytime</p>
       </div>
     </div>
@@ -347,7 +499,6 @@
   </div>
 </section>
 
-<!-- PROOF BAR -->
 <div class="proof-bar">
   <div class="proof-item">✔ Licensed &amp; Insured</div>
   <div class="proof-item">✔ 24/7 Emergency Response</div>
@@ -357,35 +508,30 @@
   <div class="proof-item">✔ Hudson Valley Owned &amp; Operated</div>
 </div>
 
-<!-- ABOUT -->
 <section id="about">
   <div class="about-grid">
     <div class="about-photo-block">
       <div class="about-photo-frame">
-        <div class="about-photo-placeholder">
-          <span class="big-icon">👷</span>
-          Add a photo of Brian here<br/>
-          <small style="font-size:.7rem;opacity:.4;letter-spacing:1px;">Replace with an &lt;img&gt; tag</small>
-        </div>
+        <div class="about-photo-placeholder"><span class="big-icon">👷</span>Add a photo of Brian here<br/><small style="font-size:.7rem;opacity:.5;letter-spacing:1px;">Replace with an &lt;img&gt; tag</small></div>
       </div>
       <div class="about-badge"><div class="big-num">100%</div><p>Satisfaction<br>Commitment</p></div>
       <div class="about-logo-corner"><img src="https://www.brianbensonhvac.com/websitelogo.png" alt="BB HVAC"/></div>
     </div>
     <div>
       <div class="section-chip">Meet Your Technician</div>
-      <h2 class="section-heading">Hi, I'm Brian.<br><em>I Do the Work Myself.</em></h2>
+      <h2 class="section-heading">Hi, I'm Brian.<br><span style="font-style:italic;font-weight:300;">I Do the Work Myself.</span></h2>
       <p class="about-body">When you call Brian Benson HVAC, you get <strong>Brian</strong>. Not a dispatcher, not a random subcontractor — me, at your door, with the tools and know-how to solve your problem.</p>
       <p class="about-body">I've built this business on one principle: treat every customer's home the way I'd want someone to treat mine. That means arriving on time, explaining everything in plain language, and never recommending something you don't actually need.</p>
       <div class="about-quote">
         <p>"I won't sell you a new system if your old one just needs a tune-up. My goal is to earn your trust — not a quick sale."</p>
         <cite>— Brian Benson, Owner</cite>
       </div>
-      <p class="about-body">Based right here in Saugerties, I serve the communities I grew up around. The Hudson Valley is home — and I take pride in keeping it comfortable year-round.</p>
+      <p class="about-body">Based right here in Saugerties, I serve the communities I grew up around. I've built a reputation across the Hudson Valley as the go-to technician for complex boiler and hydronic systems — Viessmann Vitocrossal floor-standing boilers, multi-zone radiant systems, the jobs other contractors won't touch or can't do right.</p>
       <div class="about-credentials">
         <div class="cred-badge">✔ NY State Licensed</div>
         <div class="cred-badge">✔ Fully Insured</div>
         <div class="cred-badge">✔ EPA 608 Certified</div>
-        <div class="cred-badge">✔ Synchrony Financing Partner</div>
+        <div class="cred-badge">✔ Viessmann Trained</div><div class="cred-badge">✔ Synchrony Financing Partner</div>
       </div>
       <div class="about-stats-row">
         <div class="mini-stat"><div class="num">24/7</div><p>Emergency<br>Availability</p></div>
@@ -396,14 +542,13 @@
   </div>
 </section>
 
-<!-- WHY BRIAN -->
 <section id="why">
   <div style="max-width:1200px;margin:0 auto;">
     <div class="section-chip white-chip">The Brian Benson Difference</div>
     <h2 class="section-heading light" style="max-width:600px;">Reasons Customers <span class="amber">Never Call Anyone Else</span></h2>
   </div>
   <div class="why-grid">
-    <div class="why-card"><div class="why-number">01</div><span class="why-icon">🎯</span><h3>Accurate Diagnosis First</h3><p>Most HVAC problems are misdiagnosed. We take the time to find the real issue — not just the symptom — so the fix actually lasts.</p><span class="highlight">→ No repeat service calls</span></div>
+    <div class="why-card"><div class="why-number">01</div><span class="why-icon">🎯</span><h3>Accurate Diagnosis First</h3><p>Most HVAC and boiler problems are misdiagnosed. We use proper diagnostic tools to find the real issue — not just the symptom — so the fix actually lasts.</p><span class="highlight">→ No repeat service calls</span></div>
     <div class="why-card"><div class="why-number">02</div><span class="why-icon">📋</span><h3>Written Quotes Before Work Starts</h3><p>Every job gets a clear, written estimate before we touch anything. You decide. No pressure. No surprises on the invoice.</p><span class="highlight">→ 100% price transparency</span></div>
     <div class="why-card"><div class="why-number">03</div><span class="why-icon">⏱</span><h3>We Show Up On Time</h3><p>Your time matters. We give arrival windows and we stick to them. If something changes, we call ahead — always.</p><span class="highlight">→ Respect for your schedule</span></div>
     <div class="why-card"><div class="why-number">04</div><span class="why-icon">🧹</span><h3>We Leave It Cleaner Than We Found It</h3><p>Drop cloths, shoe covers, and a full cleanup when we're done. Your home stays clean — period.</p><span class="highlight">→ Treated like our own home</span></div>
@@ -412,7 +557,6 @@
   </div>
 </section>
 
-<!-- SERVICES -->
 <section id="services">
   <div class="services-intro">
     <div>
@@ -427,32 +571,25 @@
     <div class="svc-card"><div class="svc-top"><span class="svc-icon">🛠</span><h3>Maintenance &amp; Tune-Ups</h3></div><div class="svc-body"><p>A well-maintained system runs more efficiently, lasts longer, and breaks down less. Schedule your seasonal tune-up before peak season hits.</p><ul class="svc-features"><li>Spring AC tune-ups</li><li>Fall heating inspections</li><li>Filter &amp; coil cleaning</li><li>Safety checks &amp; performance reports</li></ul></div></div>
     <div class="svc-card"><div class="svc-top"><span class="svc-icon">💨</span><h3>Air Quality Solutions</h3></div><div class="svc-body"><p>The air inside your home can be more polluted than outside. We offer solutions that make a real, measurable difference in what your family breathes.</p><ul class="svc-features"><li>HEPA &amp; media filtration</li><li>UV air purifiers</li><li>Whole-home dehumidifiers</li><li>Ventilation &amp; fresh air systems</li></ul></div></div>
     <div class="svc-card"><div class="svc-top"><span class="svc-icon">🚨</span><h3>24/7 Emergency Service</h3></div><div class="svc-body"><p>No heat in a Hudson Valley winter or no AC in August is a genuine emergency. We answer. We show up. We fix it.</p><ul class="svc-features"><li>True 24/7 availability</li><li>Fast response times</li><li>Upfront emergency pricing</li><li>All brands serviced</li></ul></div></div>
-    <div class="svc-card"><div class="svc-top"><span class="svc-icon">🏢</span><h3>Commercial HVAC</h3></div><div class="svc-body"><p>We serve local businesses too. From restaurants to offices to retail, we keep your commercial space comfortable and your equipment running.</p><ul class="svc-features"><li>Commercial installation &amp; service</li><li>Scheduled maintenance plans</li><li>Rooftop unit service</li><li>Priority scheduling for businesses</li></ul></div></div>
+    <div class="svc-card" style="border-top:3px solid var(--amber);"><div class="svc-top" style="background:linear-gradient(135deg,#051a1b,#0a3235);"><span class="svc-icon">🔥</span><h3>Boiler &amp; Hydronic Systems</h3></div><div class="svc-body"><p>Our specialty. From high-efficiency wall-hung condensing boilers to full multi-zone radiant systems — we design and install hydronic systems built to last decades.</p><ul class="svc-features"><li>Viessmann &amp; Buderus installations</li><li>Multi-zone radiant floor heating</li><li>Boiler replacement &amp; upgrades</li><li>Hydronic system design &amp; repair</li></ul></div></div>
   </div>
 </section>
 
-<!-- GUARANTEE -->
 <section id="guarantee" style="padding:70px 5%;">
   <div class="guarantee-inner">
-    <div class="guarantee-seal">
-      <div class="seal-icon">🛡️</div>
-      <h4>Brian Benson<br>Satisfaction<br>Promise</h4>
-    </div>
+    <div class="guarantee-seal"><div class="seal-icon">🛡️</div><h4>Brian Benson<br>Satisfaction<br>Promise</h4></div>
     <div class="guarantee-text">
       <h2>Our Work Is Guaranteed — Full Stop.</h2>
       <p>If you're not satisfied with the work we've done, we come back and make it right. No arguing, no runaround, no fees. That's our promise — not just a policy.</p>
       <p>We stand behind every installation, every repair, and every recommendation we make. Your comfort and your trust are non-negotiable to us.</p>
       <div class="guarantee-points">
-        <div class="gpoint">✔ Workmanship Guaranteed</div>
-        <div class="gpoint">✔ Honest Assessments</div>
-        <div class="gpoint">✔ We Come Back If Needed</div>
-        <div class="gpoint">✔ No Pressure, Ever</div>
+        <div class="gpoint">✔ Workmanship Guaranteed</div><div class="gpoint">✔ Honest Assessments</div>
+        <div class="gpoint">✔ We Come Back If Needed</div><div class="gpoint">✔ No Pressure, Ever</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
 <section id="process">
   <div class="process-intro">
     <div class="section-chip amber-chip">Simple Process</div>
@@ -467,13 +604,38 @@
   </div>
 </section>
 
-<!-- FINANCING -->
 <div class="financing-strip">
   <div><p><strong>Flexible financing available through Synchrony Bank.</strong></p><p>Don't let budget stand between your family and year-round comfort. Ask about financing at your free estimate.</p></div>
   <a href="https://www.synchrony.com/mmc/HY237598002?sitecode=acewel403" target="_blank" class="btn-primary">Learn About Financing →</a>
 </div>
 
-<!-- AREA -->
+<section id="gallery">
+  <div class="gallery-intro">
+    <div class="section-chip amber-chip">Real Work, Real Results</div>
+    <h2 class="section-heading">See What We've <span class="amber">Built</span></h2>
+    <p style="font-size:1rem;font-weight:300;color:var(--text-mid);max-width:560px;line-height:1.8;">Every photo below is a real job completed by Brian — no stock images, no subcontractors. This is the quality and care that goes into every install.</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item" onclick="openLightbox(0)"><img src="job1.jpg" alt="Heat pump installation Hudson Valley" loading="lazy"/><div class="gallery-overlay"><div class="gallery-label">Heat Pump Installation</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(1)"><img src="job2.jpg" alt="Mitsubishi Electric mini-split" loading="lazy"/><div class="gallery-overlay"><div class="gallery-label">Mitsubishi Electric Mini-Split</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(2)"><img src="job3.jpg" alt="Navien water heater" loading="lazy"/><div class="gallery-overlay"><div class="gallery-label">Viessmann Vitocrossal System</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(3)"><img src="job4.jpg" alt="Velocity boiler copper piping Hudson Valley" loading="lazy"/><div class="gallery-overlay"><div class="gallery-label">Velocity Boiler &amp; Copper Piping</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(4)"><img src="job5.jpg" alt="Rinnai tankless water heater" loading="lazy"/><div class="gallery-overlay"><div class="gallery-label">Rinnai Tankless System</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(5)"><img src="job6.jpg" alt="Viessmann boiler Buderus indirect Hudson Valley" loading="lazy"/><div class="gallery-overlay"><div class="gallery-label">Viessmann + Buderus Premium Install</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(6)"><img src="job7.jpg" alt="Viessmann multi-zone radiant boiler system Hudson Valley" loading="lazy"/><div class="gallery-overlay"><div class="gallery-label">Viessmann Multi-Zone Radiant System</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(7)"><img src="job8.jpg" alt="FLIR thermal imaging diagnostic" loading="lazy"/><div class="gallery-overlay"><div class="gallery-label">FLIR Thermal Diagnostic</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(8)"><img src="job9.jpg" alt="Dual mini-split system" loading="lazy"/><div class="gallery-overlay"><div class="gallery-label">Dual Mini-Split System</div></div></div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <button class="lightbox-nav lightbox-prev" onclick="event.stopPropagation();changePhoto(-1)">‹</button>
+  <img id="lightbox-img" src="" alt=""/>
+  <button class="lightbox-nav lightbox-next" onclick="event.stopPropagation();changePhoto(1)">›</button>
+  <div class="lightbox-caption" id="lightbox-caption"></div>
+</div>
+
 <section id="area">
   <div class="area-wrap">
     <div>
@@ -493,7 +655,7 @@
       <h3>Not sure if we cover your area?</h3>
       <p>Give us a call or shoot us a text. If we can get to you, we will. We'd rather show up and help than turn away a neighbor.</p>
       <div class="area-contact-options">
-        <a href="tel:8452170873" class="area-contact-row"><div class="acon-icon">📞</div><div><div class="acon-label">Call or Text</div><div class="acon-value">845-217-0873</div></div></a>
+        <a href="tel:8452170873" class="area-contact-row" onclick="trackPhone('area')"><div class="acon-icon">📞</div><div><div class="acon-label">Call or Text</div><div class="acon-value">845-217-0873</div></div></a>
         <a href="mailto:Contact@BrianBensonHVAC.com" class="area-contact-row"><div class="acon-icon">📧</div><div><div class="acon-label">Email Us</div><div class="acon-value">Contact@BrianBensonHVAC.com</div></div></a>
         <a href="#contact" class="area-contact-row"><div class="acon-icon">📋</div><div><div class="acon-label">Request Online</div><div class="acon-value">Free Estimate Form →</div></div></a>
       </div>
@@ -501,11 +663,76 @@
   </div>
 </section>
 
-<!-- Elfsight Google Reviews | Untitled Google Reviews -->
-<script src="https://elfsightcdn.com/platform.js" async></script>
-<div class="elfsight-app-edc96666-48b5-40eb-9468-5f1b6f336481" data-elfsight-app-lazy></div>
+<section id="testimonials">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="section-chip white-chip">Real Reviews</div>
+    <h2 class="section-heading light">What Your Neighbors<br>Are <span class="amber">Saying</span></h2>
+  </div>
+  <div class="testimonials-grid">
+    <div class="tcard"><div class="tcard-qmark">"</div><div class="tcard-stars">★★★★★</div><p>Brian exceeded every expectation. He showed up on time, explained everything clearly, and the price was exactly what he quoted. I've already referred him to three neighbors.</p><div class="tcard-author"><div class="tcard-avatar">M</div><div><div class="tcard-name">Mike T.</div><div class="tcard-loc">Saugerties, NY</div></div></div></div>
+    <div class="tcard"><div class="tcard-qmark">"</div><div class="tcard-stars">★★★★★</div><p>Honest, professional, and reliable. My old HVAC company kept pushing me to replace the whole system. Brian fixed it for a fraction of the cost and it's been running great ever since.</p><div class="tcard-author"><div class="tcard-avatar">S</div><div><div class="tcard-name">Sarah L.</div><div class="tcard-loc">Kingston, NY</div></div></div></div>
+    <div class="tcard"><div class="tcard-qmark">"</div><div class="tcard-stars">★★★★★</div><p>Called at 11pm with no heat in January. Brian answered, was at my house within the hour, and had it fixed before midnight. That's the kind of service you just don't find anymore.</p><div class="tcard-author"><div class="tcard-avatar">D</div><div><div class="tcard-name">Dave R.</div><div class="tcard-loc">Woodstock, NY</div></div></div></div>
+    <div class="tcard"><div class="tcard-qmark">"</div><div class="tcard-stars">★★★★★</div><p>I've used a lot of HVAC companies over the years. Brian is the only one I trust completely. He's upfront, fair, and genuinely cares about doing a good job. Highly recommend.</p><div class="tcard-author"><div class="tcard-avatar">J</div><div><div class="tcard-name">Jennifer K.</div><div class="tcard-loc">Rhinebeck, NY</div></div></div></div>
+    <div class="tcard"><div class="tcard-qmark">"</div><div class="tcard-stars">★★★★★</div><p>Brian installed a new mini-split for us and the whole process was seamless. Clean work, no mess left behind, and he walked us through everything before he left.</p><div class="tcard-author"><div class="tcard-avatar">C</div><div><div class="tcard-name">Chris &amp; Amy N.</div><div class="tcard-loc">New Paltz, NY</div></div></div></div>
+    <div class="tcard"><div class="tcard-qmark">"</div><div class="tcard-stars">★★★★★</div><p>Best HVAC experience I've had in 20 years as a homeowner. No nonsense, fair pricing, great work. Brian is the only person I'm calling from now on.</p><div class="tcard-author"><div class="tcard-avatar">R</div><div><div class="tcard-name">Robert M.</div><div class="tcard-loc">Catskill, NY</div></div></div></div>
+  </div>
+  <div class="reviews-link"><a href="https://www.facebook.com/profile.php?id=61572512650266" target="_blank">⭐ Leave Us a Review on Facebook →</a></div>
+</section>
 
-<!-- CONTACT -->
+<!-- ═══════════════════════════════════════════
+     FAQ SECTION — Boosts AI & Google Search
+     ChatGPT, Perplexity & Claude pull from this
+═══════════════════════════════════════════ -->
+<section id="faq">
+  <div style="max-width:900px;margin:0 auto;">
+    <div class="section-chip amber-chip">Common Questions</div>
+    <h2 class="section-heading">Frequently Asked <span style="color:var(--teal-bright);">Questions</span></h2>
+    <p style="font-size:1rem;font-weight:300;color:var(--text-mid);line-height:1.8;margin-bottom:0;">Everything you need to know before you call — though we're always happy to answer more.</p>
+  </div>
+  <div class="faq-grid">
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">Does Brian Benson HVAC serve Rhinebeck, Woodstock, and Kingston?<span class="faq-icon">+</span></button>
+      <div class="faq-answer">Yes — we serve Rhinebeck, Woodstock, Kingston, Catskill, Hudson, New Paltz, Tannersville, Phoenicia, Red Hook, Rosendale, Ellenville, Stone Ridge, and all surrounding Hudson Valley communities. Based in Saugerties, we're usually within 30–45 minutes of most of our service area.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">Do you offer 24/7 emergency HVAC service?<span class="faq-icon">+</span></button>
+      <div class="faq-answer">Yes. We offer true 24/7 emergency service — meaning Brian personally answers the phone, not an answering service. No heat in a Hudson Valley winter or no AC in peak summer is a real emergency. Call 845-217-0873 anytime.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">Do you install Mitsubishi mini-splits?<span class="faq-icon">+</span></button>
+      <div class="faq-answer">Yes. We install and service Mitsubishi Electric ductless mini-split systems throughout the Hudson Valley. We also install and service Rinnai tankless water heaters, Navien condensing systems, Bradford White water heaters, and more. Call for a free estimate.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">How much does HVAC installation or repair cost?<span class="faq-icon">+</span></button>
+      <div class="faq-answer">Every job is different depending on system type, home size, and what's needed. We always provide a free, written estimate before any work begins — so you know exactly what you're paying before we start. No hidden fees, no surprises.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">Are you licensed and insured in New York?<span class="faq-icon">+</span></button>
+      <div class="faq-answer">Yes. Brian Benson HVAC LLC is fully licensed in New York State, EPA 608 certified, and carries full liability insurance. Every job is backed by proper coverage for your protection.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">Do you offer financing?<span class="faq-icon">+</span></button>
+      <div class="faq-answer">Yes. We offer flexible financing through Synchrony Bank. Don't let budget stand between your family and year-round comfort — ask us about financing options when you request your free estimate.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">Who actually does the work — is it Brian himself?<span class="faq-icon">+</span></button>
+      <div class="faq-answer">Yes. When you call Brian Benson HVAC, you get Brian. Not a dispatcher, not a random subcontractor — Brian personally shows up, diagnoses the issue, and does the work. That's how we ensure consistent quality on every single job.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">What should I do if my heat stops working in winter?<span class="faq-icon">+</span></button>
+      <div class="faq-answer">Call us immediately at 845-217-0873 — we're available 24/7. While you wait, check your thermostat settings, make sure your system's power switch is on, and check your circuit breaker. But don't hesitate — no heat in a Hudson Valley winter is an emergency and we'll get to you as fast as possible.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">Do you specialize in boiler and hydronic heating systems?<span class="faq-icon">+</span></button>
+      <div class="faq-answer">Yes — boiler and hydronic system work is one of our core specialties. We install and service Viessmann and Buderus wall-hung condensing boilers, multi-zone radiant floor heating systems, and complete hydronic upgrades. If you have a complex boiler job that other contractors have turned down or gotten wrong, we're the right call. Contact us at 845-217-0873 for a free assessment.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">Can you replace my old oil boiler with a high-efficiency gas or electric system?<span class="faq-icon">+</span></button>
+      <div class="faq-answer">Absolutely. We specialize in oil-to-gas and oil-to-electric boiler conversions throughout the Hudson Valley. We work with premium European brands like Viessmann and Buderus to deliver high-efficiency replacements that significantly reduce your energy costs. We handle the full installation including new copper piping, zone controls, and indirect water heating integration.</div>
+    </div>
+  </div>
+</section>
+
 <section id="contact">
   <div class="contact-wrap">
     <div class="contact-left">
@@ -514,7 +741,7 @@
       <p>Whether it's an emergency, a quote, or just a question — reach out. We respond fast, we're easy to talk to, and there's never any pressure.</p>
       <div class="contact-items">
         <div class="citem"><div class="citem-icon">📍</div><div><div class="citem-label">Location</div><p>Saugerties, NY 12477</p></div></div>
-        <div class="citem"><div class="citem-icon">📞</div><div><div class="citem-label">Phone / Text</div><a href="tel:8452170873">845-217-0873</a></div></div>
+        <div class="citem"><div class="citem-icon">📞</div><div><div class="citem-label">Phone / Text</div><a href="tel:8452170873" onclick="trackPhone('contact')">845-217-0873</a></div></div>
         <div class="citem"><div class="citem-icon">📧</div><div><div class="citem-label">Email</div><a href="mailto:Contact@BrianBensonHVAC.com">Contact@BrianBensonHVAC.com</a></div></div>
         <div class="citem"><div class="citem-icon">🕐</div><div><div class="citem-label">Hours</div><p>Mon–Fri: 7am–6pm · Sat: 8am–2pm<br/>Emergency service available 24/7</p></div></div>
       </div>
@@ -553,16 +780,15 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-top">
     <div class="footer-logo"><img src="https://www.brianbensonhvac.com/websitelogo.png" alt="Brian Benson HVAC LLC"/></div>
     <ul class="footer-links">
       <li><a href="#about">About</a></li><li><a href="#services">Services</a></li>
       <li><a href="#area">Service Area</a></li><li><a href="#testimonials">Reviews</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li>
     </ul>
-    <a href="tel:8452170873" class="btn-primary" style="font-size:.9rem;padding:.8rem 1.6rem;">📞 845-217-0873</a>
+    <a href="tel:8452170873" class="btn-primary" onclick="trackPhone('footer')" style="font-size:.9rem;padding:.8rem 1.6rem;">📞 845-217-0873</a>
   </div>
   <div class="footer-bottom">
     <p>© 2025 Brian Benson HVAC LLC · Saugerties, NY · All rights reserved.</p>
@@ -570,292 +796,65 @@
   </div>
 </footer>
 
-<a href="tel:8452170873" class="float-call">📞 Call Now</a>
+<a href="tel:8452170873" class="float-call" onclick="trackPhone('float_button')">📞 Call Now</a>
 
 <script>
+  const galleryPhotos=[
+    {src:'job1.jpg',caption:'Heat Pump Installation'},
+    {src:'job2.jpg',caption:'Mitsubishi Electric Mini-Split'},
+    {src:'job3.jpg',caption:'Viessmann Vitocrossal + Vitocell System'},
+    {src:'job4.jpg',caption:'Velocity Boiler & Copper Piping'},
+    {src:'job5.jpg',caption:'Rinnai Tankless System'},
+    {src:'job6.jpg',caption:'Viessmann Boiler + Buderus Indirect Install'},
+    {src:'job7.jpg',caption:'Viessmann Multi-Zone Radiant System'},
+    {src:'job8.jpg',caption:'FLIR Thermal Diagnostic'},
+    {src:'job9.jpg',caption:'Dual Mini-Split System'}
+  ];
+  let currentPhoto=0;
+  function openLightbox(i){currentPhoto=i;document.getElementById('lightbox-img').src=galleryPhotos[i].src;document.getElementById('lightbox-caption').textContent=galleryPhotos[i].caption;document.getElementById('lightbox').classList.add('open');document.body.style.overflow='hidden';}
+  function closeLightbox(e){if(e&&e.target!==document.getElementById('lightbox')&&!e.target.classList.contains('lightbox-close'))return;document.getElementById('lightbox').classList.remove('open');document.body.style.overflow='';}
+  function changePhoto(d){currentPhoto=(currentPhoto+d+galleryPhotos.length)%galleryPhotos.length;document.getElementById('lightbox-img').src=galleryPhotos[currentPhoto].src;document.getElementById('lightbox-caption').textContent=galleryPhotos[currentPhoto].caption;}
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.getElementById('lightbox').classList.remove('open');document.body.style.overflow='';}if(e.key==='ArrowRight')changePhoto(1);if(e.key==='ArrowLeft')changePhoto(-1);});
+
   function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
 
-  function submitForm(){
-  const name=document.getElementById('fname').value.trim();
-  const phone=document.getElementById('fphone').value.trim();
-  const email=document.getElementById('femail').value.trim();
-  const town=document.getElementById('ftown').value.trim();
-  const service=document.getElementById('fservice').value;
-  const message=document.getElementById('fmsg').value.trim();
-  if(!name||(!phone&&!email)){alert('Please enter your name and at least a phone number or email.');return;}
-  const data=new FormData();
-  data.append('name',name);
-  data.append('phone',phone);
-  data.append('email',email);
-  data.append('town',town);
-  data.append('service',service);
-  data.append('message',message);
-  fetch('https://formspree.io/f/mgoplwdp',{method:'POST',body:data,headers:{'Accept':'application/json'}})
-  .then(r=>{
-    if(r.ok){
-      document.getElementById('formSuccess').style.display='block';
-      document.querySelector('.form-submit').style.display='none';
-    } else {
-      alert('Something went wrong. Please call us at 845-217-0873.');
-    }
-  })
-  .catch(()=>alert('Something went wrong. Please call us at 845-217-0873.'));
-}
+  function toggleFAQ(btn){
+    const answer=btn.nextElementSibling;
+    const isOpen=btn.classList.contains('open');
+    document.querySelectorAll('.faq-question.open').forEach(q=>{q.classList.remove('open');q.nextElementSibling.classList.remove('open');});
+    if(!isOpen){btn.classList.add('open');answer.classList.add('open');}
+    if(typeof gtag!=='undefined'){gtag('event','faq_click',{event_category:'Engagement',event_label:btn.textContent.trim().substring(0,50)});}
+  }
 
-  // Scroll nav highlight
+  function submitForm(){
+    const name=document.getElementById('fname').value.trim();
+    const phone=document.getElementById('fphone').value.trim();
+    const email=document.getElementById('femail').value.trim();
+    const town=document.getElementById('ftown').value.trim();
+    const service=document.getElementById('fservice').value;
+    const message=document.getElementById('fmsg').value.trim();
+    if(!name||(!phone&&!email)){alert('Please enter your name and at least a phone number or email.');return;}
+    const data=new FormData();
+    data.append('name',name);data.append('phone',phone);data.append('email',email);
+    data.append('town',town);data.append('service',service);data.append('message',message);
+    fetch('https://formspree.io/f/mgoplwdp',{method:'POST',body:data,headers:{'Accept':'application/json'}})
+    .then(r=>{
+      if(r.ok){
+        document.getElementById('formSuccess').style.display='block';
+        document.querySelector('.form-submit').style.display='none';
+        trackFormSubmit();
+        if(typeof gtag!=='undefined'){gtag('event','conversion',{event_category:'Lead',event_label:'form_'+service,value:1});}
+      }else{alert('Something went wrong. Please call us at 845-217-0873.');}
+    })
+    .catch(()=>alert('Something went wrong. Please call us at 845-217-0873.'));
+  }
+
   const allSec=document.querySelectorAll('section[id]');
   const allNav=document.querySelectorAll('.nav-links a[href^="#"]');
-  window.addEventListener('scroll',()=>{
-    let cur='';
-    allSec.forEach(s=>{if(window.scrollY>=s.offsetTop-120)cur=s.id;});
-    allNav.forEach(a=>{a.style.color=a.getAttribute('href')==='#'+cur?'var(--amber)':'';});
-  });
+  window.addEventListener('scroll',()=>{let cur='';allSec.forEach(s=>{if(window.scrollY>=s.offsetTop-120)cur=s.id;});allNav.forEach(a=>{a.style.color=a.getAttribute('href')==='#'+cur?'var(--amber)':'';});});
 
-  // Scroll fade-in
-  const obs=new IntersectionObserver((entries)=>{
-    entries.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';}});
-  },{threshold:0.1});
-  document.querySelectorAll('.svc-card,.why-card,.tcard,.process-step,.mini-stat,.trust-card').forEach(el=>{
-    el.style.opacity='0';el.style.transform='translateY(20px)';
-    el.style.transition='opacity 0.5s ease, transform 0.5s ease';
-    obs.observe(el);
-  });
+  const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';}});},{threshold:0.1});
+  document.querySelectorAll('.svc-card,.why-card,.tcard,.process-step,.mini-stat,.trust-card,.faq-item').forEach(el=>{el.style.opacity='0';el.style.transform='translateY(20px)';el.style.transition='opacity 0.5s ease, transform 0.5s ease';obs.observe(el);});
 </script>
-<!-- ============================================================
-     BRIAN BENSON HVAC — PHOTO GALLERY SECTION
-
-     HOW TO USE:
-     1. Upload all job1.jpg through job9.jpg to your GitHub repo
-     2. Paste this entire block into your index.html
-        BEFORE the closing </body> tag — or right after the
-        #services section.
-     ============================================================ -->
-
-<!-- GALLERY STYLES — paste inside your <style> block instead if preferred -->
-<style>
-  #gallery { background: var(--off-white); padding: 100px 5%; }
-  .gallery-intro { max-width: 1200px; margin: 0 auto 3rem; }
-  .gallery-grid {
-    max-width: 1200px; margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-  }
-  .gallery-item {
-    position: relative; overflow: hidden;
-    border-radius: 8px;
-    aspect-ratio: 4/3;
-    cursor: pointer;
-    background: var(--teal-dark);
-  }
-  .gallery-item.tall { aspect-ratio: 3/4; }
-  .gallery-item img {
-    width: 100%; height: 100%;
-    object-fit: cover;
-    transition: transform 0.4s ease;
-    display: block;
-  }
-  .gallery-item:hover img { transform: scale(1.06); }
-  .gallery-overlay {
-    position: absolute; inset: 0;
-    background: linear-gradient(to top, rgba(5,26,27,0.85) 0%, transparent 55%);
-    opacity: 0; transition: opacity 0.3s ease;
-    display: flex; align-items: flex-end; padding: 1.2rem;
-  }
-  .gallery-item:hover .gallery-overlay { opacity: 1; }
-  .gallery-label {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.88rem; font-weight: 600;
-    letter-spacing: 1.5px; text-transform: uppercase;
-    color: var(--white);
-    display: flex; align-items: center; gap: 0.5rem;
-  }
-  .gallery-label::before {
-    content: '';
-    display: inline-block; width: 8px; height: 8px;
-    background: var(--amber); border-radius: 50%; flex-shrink: 0;
-  }
-
-  /* LIGHTBOX */
-  .lightbox {
-    display: none; position: fixed; inset: 0; z-index: 9999;
-    background: rgba(5,26,27,0.96);
-    align-items: center; justify-content: center;
-    padding: 2rem;
-  }
-  .lightbox.open { display: flex; }
-  .lightbox img {
-    max-width: 90vw; max-height: 85vh;
-    object-fit: contain; border-radius: 6px;
-    box-shadow: 0 30px 80px rgba(0,0,0,0.5);
-  }
-  .lightbox-close {
-    position: fixed; top: 1.5rem; right: 1.5rem;
-    width: 44px; height: 44px;
-    background: var(--amber); border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 1.4rem; cursor: pointer; color: var(--teal-darkest);
-    font-weight: 700; line-height: 1;
-    border: none; z-index: 10000;
-  }
-  .lightbox-caption {
-    position: fixed; bottom: 1.5rem; left: 50%; transform: translateX(-50%);
-    background: rgba(5,26,27,0.9);
-    border: 1px solid rgba(245,166,35,0.3);
-    color: var(--white);
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.88rem; letter-spacing: 2px; text-transform: uppercase;
-    padding: 0.6rem 1.5rem; border-radius: 30px;
-    white-space: nowrap;
-  }
-  .lightbox-nav {
-    position: fixed; top: 50%; transform: translateY(-50%);
-    background: rgba(245,166,35,0.15);
-    border: 1px solid rgba(245,166,35,0.3);
-    color: var(--amber); font-size: 1.5rem;
-    width: 50px; height: 50px; border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    cursor: pointer; transition: background 0.2s;
-    z-index: 10000;
-  }
-  .lightbox-nav:hover { background: var(--amber); color: var(--teal-darkest); }
-  .lightbox-prev { left: 1rem; }
-  .lightbox-next { right: 1rem; }
-
-  @media(max-width: 768px) {
-    .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-    .gallery-item.tall { aspect-ratio: 4/3; }
-  }
-  @media(max-width: 480px) {
-    .gallery-grid { grid-template-columns: 1fr; }
-  }
-</style>
-
-<!-- GALLERY SECTION HTML -->
-<section id="gallery">
-  <div class="gallery-intro">
-    <div class="section-chip amber-chip">Real Work, Real Results</div>
-    <h2 class="section-heading">See What We've <span class="amber">Built</span></h2>
-    <p style="font-size:1rem;font-weight:300;color:var(--text-mid);max-width:560px;line-height:1.8;">
-      Every photo below is a real job completed by Brian — no stock images, no subcontractors.
-      This is the quality and care that goes into every install.
-    </p>
-  </div>
-
-  <div class="gallery-grid">
-
-    <div class="gallery-item" onclick="openLightbox(0)">
-      <img src="job1.jpg" alt="Champion heat pump installation" loading="lazy"/>
-      <div class="gallery-overlay">
-        <div class="gallery-label">Heat Pump Installation</div>
-      </div>
-    </div>
-
-    <div class="gallery-item" onclick="openLightbox(1)">
-      <img src="job2.jpg" alt="Mitsubishi Electric mini-split" loading="lazy"/>
-      <div class="gallery-overlay">
-        <div class="gallery-label">Mitsubishi Mini-Split</div>
-      </div>
-    </div>
-
-    <div class="gallery-item" onclick="openLightbox(2)">
-      <img src="job3.jpg" alt="Navien water heater with copper piping" loading="lazy"/>
-      <div class="gallery-overlay">
-        <div class="gallery-label">Navien Water Heater Install</div>
-      </div>
-    </div>
-
-    <div class="gallery-item" onclick="openLightbox(3)">
-      <img src="job4.jpg" alt="Velocity boiler with copper piping" loading="lazy"/>
-      <div class="gallery-overlay">
-        <div class="gallery-label">Velocity Boiler &amp; Copper Piping</div>
-      </div>
-    </div>
-
-    <div class="gallery-item" onclick="openLightbox(4)">
-      <img src="job5.jpg" alt="Rinnai tankless water heater" loading="lazy"/>
-      <div class="gallery-overlay">
-        <div class="gallery-label">Rinnai Tankless System</div>
-      </div>
-    </div>
-
-    <div class="gallery-item" onclick="openLightbox(5)">
-      <img src="job6.jpg" alt="Bradford White water heater" loading="lazy"/>
-      <div class="gallery-overlay">
-        <div class="gallery-label">Bradford White Water Heater</div>
-      </div>
-    </div>
-
-    <div class="gallery-item" onclick="openLightbox(6)">
-      <img src="job7.jpg" alt="Bradford White energy star install" loading="lazy"/>
-      <div class="gallery-overlay">
-        <div class="gallery-label">Energy Star Water Heater</div>
-      </div>
-    </div>
-
-    <div class="gallery-item" onclick="openLightbox(7)">
-      <img src="job8.jpg" alt="FLIR thermal imaging diagnostic" loading="lazy"/>
-      <div class="gallery-overlay">
-        <div class="gallery-label">FLIR Thermal Diagnostic</div>
-      </div>
-    </div>
-
-    <div class="gallery-item" onclick="openLightbox(8)">
-      <img src="job9.jpg" alt="Dual mini-split outdoor units" loading="lazy"/>
-      <div class="gallery-overlay">
-        <div class="gallery-label">Dual Mini-Split System</div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
-  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
-  <button class="lightbox-nav lightbox-prev" onclick="event.stopPropagation();changePhoto(-1)">‹</button>
-  <img id="lightbox-img" src="" alt=""/>
-  <button class="lightbox-nav lightbox-next" onclick="event.stopPropagation();changePhoto(1)">›</button>
-  <div class="lightbox-caption" id="lightbox-caption"></div>
-</div>
-
-<script>
-  const galleryPhotos = [
-    { src: 'job1.jpg', caption: 'Heat Pump Installation' },
-    { src: 'job2.jpg', caption: 'Mitsubishi Mini-Split' },
-    { src: 'job3.jpg', caption: 'Navien Water Heater Install' },
-    { src: 'job4.jpg', caption: 'Velocity Boiler & Copper Piping' },
-    { src: 'job5.jpg', caption: 'Rinnai Tankless System' },
-    { src: 'job6.jpg', caption: 'Bradford White Water Heater' },
-    { src: 'job7.jpg', caption: 'Energy Star Water Heater' },
-    { src: 'job8.jpg', caption: 'FLIR Thermal Diagnostic' },
-    { src: 'job9.jpg', caption: 'Dual Mini-Split System' },
-  ];
-  let currentPhoto = 0;
-
-  function openLightbox(index) {
-    currentPhoto = index;
-    document.getElementById('lightbox-img').src = galleryPhotos[index].src;
-    document.getElementById('lightbox-caption').textContent = galleryPhotos[index].caption;
-    document.getElementById('lightbox').classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeLightbox(e) {
-    if (e && e.target !== document.getElementById('lightbox') && !e.target.classList.contains('lightbox-close')) return;
-    document.getElementById('lightbox').classList.remove('open');
-    document.body.style.overflow = '';
-  }
-  function changePhoto(dir) {
-    currentPhoto = (currentPhoto + dir + galleryPhotos.length) % galleryPhotos.length;
-    document.getElementById('lightbox-img').src = galleryPhotos[currentPhoto].src;
-    document.getElementById('lightbox-caption').textContent = galleryPhotos[currentPhoto].caption;
-  }
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') { document.getElementById('lightbox').classList.remove('open'); document.body.style.overflow = ''; }
-    if (e.key === 'ArrowRight') changePhoto(1);
-    if (e.key === 'ArrowLeft') changePhoto(-1);
-  });
-</script>
-
 </body>
 </html>
